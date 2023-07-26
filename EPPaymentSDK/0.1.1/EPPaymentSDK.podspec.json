@@ -1,0 +1,30 @@
+{
+  "name": "EPPaymentSDK",
+  "version": "0.1.1",
+  "summary": "elex 中台支付SDK",
+  "description": "'elex 中台支付SDK，集成iOS IAP支付功能'",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "yanlong": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/EPPaymentSDK/0.1.1/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "dependencies": {
+    "EPSDKBase": [
+
+    ]
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "prefix_header_contents": "",
+  "vendored_frameworks": "EPPaymentSDK.framework"
+}
