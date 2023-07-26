@@ -1,0 +1,51 @@
+{
+  "name": "EPAccountSDK",
+  "version": "0.1.0",
+  "summary": "elex 中台账号模块",
+  "description": "'elex 中台统一账号模块'",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "elex": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/EPAccountSDK/0.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "dependencies": {
+    "EPSDKBase": [
+
+    ],
+    "FBSDKCoreKit": [
+
+    ],
+    "FBSDKLoginKit": [
+
+    ],
+    "FBSDKShareKit": [
+
+    ],
+    "FBAEMKit": [
+
+    ],
+    "GoogleSignIn": [
+
+    ],
+    "UMVerify": [
+
+    ],
+    "UMCommon": [
+
+    ]
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "prefix_header_contents": "",
+  "vendored_frameworks": "EPAccountSDK.framework"
+}
