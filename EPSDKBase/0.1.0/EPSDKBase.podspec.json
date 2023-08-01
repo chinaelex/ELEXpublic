@@ -11,7 +11,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://localhost:8080/frameworks/EPSDKBase/0.1.0/zip",
+    "http": "http://cocoapods.elex-tech.com/EPSDKBase/0.1.0/EPSDKBase.framework.zip",
     "type": "zip"
   },
   "platforms": {
