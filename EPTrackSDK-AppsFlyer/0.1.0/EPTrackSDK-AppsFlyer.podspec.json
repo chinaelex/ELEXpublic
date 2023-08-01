@@ -11,7 +11,7 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://localhost:8080/frameworks/EPTrackSDK-AppsFlyer/0.1.0/zip",
+    "http": "http://cocoapods.elex-tech.com/EPTrackSDK-AppsFlyer/0.1.0/EPTrackSDK-AppsFlyer.framework.zip",
     "type": "zip"
   },
   "platforms": {
