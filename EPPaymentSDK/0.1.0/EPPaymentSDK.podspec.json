@@ -11,7 +11,7 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/EPPaymentSDK/0.1.0/EPPaymentSDK.framework.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPPaymentSDK/0.1.0/EPPaymentSDK.framework.zip",
     "type": "zip"
   },
   "platforms": {
