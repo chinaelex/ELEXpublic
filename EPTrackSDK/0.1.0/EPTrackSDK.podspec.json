@@ -11,7 +11,7 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/EPTrackSDK/0.1.0/EPTrackSDK.framework.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK/0.1.0/EPTrackSDK.framework.zip",
     "type": "zip"
   },
   "platforms": {
