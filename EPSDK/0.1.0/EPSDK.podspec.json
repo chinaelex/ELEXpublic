@@ -15,7 +15,7 @@
     "type": "zip"
   },
   "platforms": {
-    "ios": "12.0"
+    "ios": "10.0"
   },
   "libraries": [
     "stdc++",
@@ -25,16 +25,17 @@
     "EPSDKBase": [
 
     ],
-    "EPAccountSDK": [
-
-    ],
-    "EPPaymentSDK": [
-
-    ],
     "EPTrackSDK": [
+
+    ],
+    "EPSDK-WebView": [
 
     ]
   },
   "prefix_header_contents": "",
-  "vendored_frameworks": "EPSDK.framework"
+  "vendored_frameworks": "EPSDK.framework",
+  "resources": [
+    "EPSDK.framework/Resources/*.bundle",
+    "EPSDK.framework/Versions/A/Resources/*.bundle"
+  ]
 }
