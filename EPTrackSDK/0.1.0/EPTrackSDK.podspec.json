@@ -20,6 +20,9 @@
   "dependencies": {
     "EPSDKBase": [
 
+    ],
+    "EPSDK": [
+
     ]
   },
   "pod_target_xcconfig": {
