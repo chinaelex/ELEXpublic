@@ -15,31 +15,16 @@
     "type": "zip"
   },
   "platforms": {
-    "ios": "12.0"
+    "ios": "10.0"
   },
   "dependencies": {
     "EPSDKBase": [
 
     ],
-    "FBSDKCoreKit": [
-
-    ],
-    "FBSDKLoginKit": [
-
-    ],
-    "FBSDKShareKit": [
-
-    ],
-    "FBAEMKit": [
-
-    ],
     "GoogleSignIn": [
 
     ],
-    "UMVerify": [
-
-    ],
-    "UMCommon": [
+    "EPSDK": [
 
     ]
   },
@@ -47,5 +32,9 @@
     "DEFINES_MODULE": "YES"
   },
   "prefix_header_contents": "",
-  "vendored_frameworks": "EPAccountSDK.framework"
+  "vendored_frameworks": "EPAccountSDK.framework",
+  "resources": [
+    "EPAccountSDK.framework/Resources/*.bundle",
+    "EPAccountSDK.framework/Versions/A/Resources/*.bundle"
+  ]
 }
