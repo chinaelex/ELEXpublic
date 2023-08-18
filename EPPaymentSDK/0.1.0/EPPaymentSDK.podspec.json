@@ -20,11 +20,18 @@
   "dependencies": {
     "EPSDKBase": [
 
+    ],
+    "EPSDK": [
+
     ]
   },
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
   "prefix_header_contents": "",
-  "vendored_frameworks": "EPPaymentSDK.framework"
+  "vendored_frameworks": "EPPaymentSDK.framework",
+  "resources": [
+    "EPPaymentSDK.framework/Resources/*.bundle",
+    "EPPaymentSDK.framework/Versions/A/Resources/*.bundle"
+  ]
 }
