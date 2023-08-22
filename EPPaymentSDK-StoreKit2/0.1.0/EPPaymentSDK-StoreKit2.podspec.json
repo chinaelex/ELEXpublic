@@ -31,7 +31,10 @@
     "DEFINES_MODULE": "YES"
   },
   "xcconfig": {
-    "LD_RUNPATH_SEARCH_PATHS": "$(inherited) /usr/lib/swift"
+    "LD_RUNPATH_SEARCH_PATHS": [
+      "$(inherited)",
+      "/usr/lib/swift"
+    ]
   },
   "prefix_header_contents": "",
   "vendored_frameworks": "EPPaymentSDK-StoreKit2.framework",
