@@ -24,12 +24,6 @@
     "EPTrackSDK": [
 
     ],
-    "FBAEMKit": [
-      "15.1.0"
-    ],
-    "FBSDKCoreKit_Basics": [
-      "15.1.0"
-    ],
     "FBSDKCoreKit": [
       "15.1.0"
     ]
