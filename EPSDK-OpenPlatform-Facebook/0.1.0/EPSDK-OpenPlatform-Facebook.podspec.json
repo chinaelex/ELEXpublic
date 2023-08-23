@@ -22,10 +22,7 @@
     "z"
   ],
   "dependencies": {
-    "EPSDKBase": [
-
-    ],
-    "EPSDK": [
+    "EPSDK-OpenPlatform": [
 
     ],
     "FBSDKCoreKit": [
