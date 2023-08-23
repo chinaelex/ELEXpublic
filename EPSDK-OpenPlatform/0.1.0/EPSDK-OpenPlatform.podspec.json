@@ -1,0 +1,30 @@
+{
+  "name": "EPSDK-OpenPlatform",
+  "version": "0.1.0",
+  "summary": "EPSDK-OpenPlatform",
+  "description": "EPSDK 三方social库管理模块",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "elex": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK-OpenPlatform/0.1.0/EPSDK-OpenPlatform.framework.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "libraries": [
+    "stdc++",
+    "z"
+  ],
+  "dependencies": {
+    "EPSDKBase": [
+
+    ]
+  },
+  "vendored_frameworks": "EPSDK-OpenPlatform.framework"
+}
