@@ -27,6 +27,9 @@
     ],
     "EPSDK-WebView": [
 
+    ],
+    "EPSDK-OpenPlatform": [
+
     ]
   },
   "prefix_header_contents": "",
