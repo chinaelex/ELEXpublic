@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "EPSDKBase": [
-
+      "0.1.0"
     ]
   },
   "vendored_frameworks": "EPSDK-OpenPlatform.framework"
