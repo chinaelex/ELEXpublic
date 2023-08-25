@@ -23,10 +23,10 @@
   ],
   "dependencies": {
     "EPSDK-OpenPlatform": [
-
+      "0.1.0"
     ],
     "GoogleSignIn": [
-
+      "7.0.0"
     ]
   },
   "vendored_frameworks": "EPSDK-OpenPlatform-Google.framework"
