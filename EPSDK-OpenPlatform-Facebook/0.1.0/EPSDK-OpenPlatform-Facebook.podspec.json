@@ -23,19 +23,19 @@
   ],
   "dependencies": {
     "EPSDK-OpenPlatform": [
-
+      "0.1.0"
     ],
     "FBSDKCoreKit": [
-
+      "15.1.0"
     ],
     "FBSDKLoginKit": [
-
+      "15.1.0"
     ],
     "FBSDKShareKit": [
-
+      "15.1.0"
     ],
     "FBAEMKit": [
-
+      "15.1.0"
     ]
   },
   "prefix_header_contents": "",
