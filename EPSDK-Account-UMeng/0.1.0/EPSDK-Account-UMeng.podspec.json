@@ -19,16 +19,16 @@
   },
   "dependencies": {
     "EPSDKBase": [
-
+      "0.1.0"
     ],
     "EPSDK-Account": [
-
+      "0.1.0"
     ],
     "UMVerify": [
-
+      "2.7.0"
     ],
     "UMCommon": [
-
+      "7.4.1"
     ]
   },
   "pod_target_xcconfig": {
