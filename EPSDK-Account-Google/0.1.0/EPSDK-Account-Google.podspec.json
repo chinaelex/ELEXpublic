@@ -26,6 +26,9 @@
     ],
     "EPSDK-OpenPlatform": [
       "0.1.0"
+    ],
+    "EPSDK-OpenPlatform-Google": [
+      "0.1.0"
     ]
   },
   "pod_target_xcconfig": {
