@@ -15,7 +15,7 @@
     "type": "zip"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
   "dependencies": {
     "EPSDKBase": [
@@ -25,6 +25,9 @@
       "0.1.0"
     ],
     "EPSDK-OpenPlatform": [
+      "0.1.0"
+    ],
+    "EPSDK-OpenPlatform-Facebook": [
       "0.1.0"
     ]
   },
