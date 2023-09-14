@@ -32,7 +32,6 @@
       "0.1.0"
     ]
   },
-  "prefix_header_contents": "",
   "vendored_frameworks": "EPSDK.framework",
   "resources": [
     "EPSDK.framework/Resources/*.bundle",
