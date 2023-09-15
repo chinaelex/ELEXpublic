@@ -1,0 +1,42 @@
+{
+  "name": "EPSDK-Pay-StoreKit2",
+  "version": "0.1.1",
+  "summary": "elex 中台支付SDK,sk2版本",
+  "description": "elex 中台支付SDK，集成iOS IAP支付功能（StoreKit2版本）",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "yanlong": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK-Pay-StoreKit2/0.1.1/EPSDK-Pay-StoreKit2.framework.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "5.5",
+  "module_name": "PEPayStoreKit2",
+  "frameworks": "storekit",
+  "dependencies": {
+    "EPSDKBase": [
+
+    ],
+    "EPSDK-Pay": [
+
+    ]
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "xcconfig": {
+    "LD_RUNPATH_SEARCH_PATHS": [
+      "$(inherited)",
+      "/usr/lib/swift"
+    ]
+  },
+  "vendored_frameworks": "EPSDK-Pay-StoreKit2.framework",
+  "swift_version": "5.5"
+}
