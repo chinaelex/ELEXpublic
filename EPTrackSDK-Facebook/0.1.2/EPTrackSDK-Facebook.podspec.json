@@ -1,0 +1,36 @@
+{
+  "name": "EPTrackSDK-Facebook",
+  "version": "0.1.2",
+  "summary": "elex 中台埋点SDK-Facebook",
+  "description": "'elex 中台埋点SDK-Facebook'",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "yanlong": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK-Facebook/0.1.2/EPTrackSDK-Facebook.framework.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "dependencies": {
+    "EPSDKBase": [
+
+    ],
+    "EPTrackSDK": [
+
+    ],
+    "FBSDKCoreKit": [
+      "15.1.0"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "prefix_header_contents": "",
+  "vendored_frameworks": "EPTrackSDK-Facebook.framework"
+}
