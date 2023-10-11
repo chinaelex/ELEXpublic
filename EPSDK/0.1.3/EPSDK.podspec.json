@@ -1,0 +1,46 @@
+{
+  "name": "EPSDK",
+  "version": "0.1.3",
+  "summary": "EPSDK",
+  "description": "'no more description'",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "elex": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK/0.1.3/EPSDK.framework.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "libraries": [
+    "stdc++",
+    "z"
+  ],
+  "dependencies": {
+    "EPSDKBase": [
+
+    ],
+    "EPSDK-WebView": [
+
+    ],
+    "EPSDK-OpenPlatform": [
+
+    ],
+    "EPSDK-MessageChannel": [
+
+    ]
+  },
+  "vendored_frameworks": "EPSDK.framework",
+  "resources": [
+    "EPSDK.framework/Resources/*.bundle",
+    "EPSDK.framework/Versions/A/Resources/*.bundle"
+  ]
+}
