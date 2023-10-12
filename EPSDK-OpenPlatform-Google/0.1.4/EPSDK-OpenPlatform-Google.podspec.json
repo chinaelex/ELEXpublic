@@ -1,0 +1,33 @@
+{
+  "name": "EPSDK-OpenPlatform-Google",
+  "version": "0.1.4",
+  "summary": "EPSDK-OpenPlatform-Google",
+  "description": "EPSDK Google 接入模块",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "elex": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK-OpenPlatform-Google/0.1.4/EPSDK-OpenPlatform-Google.framework.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "libraries": [
+    "stdc++",
+    "z"
+  ],
+  "dependencies": {
+    "EPSDK-OpenPlatform": [
+
+    ],
+    "GoogleSignIn": [
+      "7.0.0"
+    ]
+  },
+  "vendored_frameworks": "EPSDK-OpenPlatform-Google.framework"
+}
