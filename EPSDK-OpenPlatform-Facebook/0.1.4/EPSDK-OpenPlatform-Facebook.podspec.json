@@ -1,0 +1,43 @@
+{
+  "name": "EPSDK-OpenPlatform-Facebook",
+  "version": "0.1.4",
+  "summary": "EPSDK-OpenPlatform-Facebook",
+  "description": "EPSDK Facebook 接入模块",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "elex": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK-OpenPlatform-Facebook/0.1.4/EPSDK-OpenPlatform-Facebook.framework.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "libraries": [
+    "stdc++",
+    "z"
+  ],
+  "dependencies": {
+    "EPSDK-OpenPlatform": [
+
+    ],
+    "FBSDKCoreKit": [
+      "15.1.0"
+    ],
+    "FBSDKLoginKit": [
+      "15.1.0"
+    ],
+    "FBSDKShareKit": [
+      "15.1.0"
+    ],
+    "FBAEMKit": [
+      "15.1.0"
+    ]
+  },
+  "prefix_header_contents": "",
+  "vendored_frameworks": "EPSDK-OpenPlatform-Facebook.framework"
+}
