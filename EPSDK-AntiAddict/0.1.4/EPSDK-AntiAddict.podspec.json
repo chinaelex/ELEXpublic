@@ -1,0 +1,36 @@
+{
+  "name": "EPSDK-AntiAddict",
+  "version": "0.1.4",
+  "summary": "elex 防沉迷",
+  "description": "elex 防沉迷系统",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "yanlong": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK-AntiAddict/0.1.4/EPSDK-AntiAddict.framework.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "dependencies": {
+    "EPSDKBase": [
+
+    ],
+    "EPSDK": [
+
+    ]
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "vendored_frameworks": "EPSDK-AntiAddict.framework",
+  "resources": [
+    "EPSDK-AntiAddict.framework/Resources/*.bundle",
+    "EPSDK-AntiAddict.framework/Versions/A/Resources/*.bundle"
+  ]
+}
