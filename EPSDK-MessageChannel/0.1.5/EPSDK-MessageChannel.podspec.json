@@ -1,0 +1,30 @@
+{
+  "name": "EPSDK-MessageChannel",
+  "version": "0.1.5",
+  "summary": "EPSDK-MessageChannel",
+  "description": "EPSDK 消息通道",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "elex": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK-MessageChannel/0.1.5/EPSDK-MessageChannel.framework.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "libraries": [
+    "stdc++",
+    "z"
+  ],
+  "dependencies": {
+    "EPSDKBase": [
+
+    ]
+  },
+  "vendored_frameworks": "EPSDK-MessageChannel.framework"
+}
