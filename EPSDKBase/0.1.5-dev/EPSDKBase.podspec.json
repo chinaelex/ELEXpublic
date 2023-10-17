@@ -1,0 +1,29 @@
+{
+  "name": "EPSDKBase",
+  "version": "0.1.5-dev",
+  "summary": "EPSDKBase 模块",
+  "description": "'elex中台SDK基础模块，提供基础的Utils和公共组件'",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "elex": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDKBase/0.1.5/EPSDKBase.framework.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "libraries": [
+    "stdc++",
+    "z"
+  ],
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "prefix_header_contents": "",
+  "vendored_frameworks": "EPSDKBase.framework"
+}
