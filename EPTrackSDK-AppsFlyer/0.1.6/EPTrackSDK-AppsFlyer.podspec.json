@@ -1,0 +1,36 @@
+{
+  "name": "EPTrackSDK-AppsFlyer",
+  "version": "0.1.6",
+  "summary": "elex 中台埋点SDK-AppsFlyer",
+  "description": "'elex 中台埋点SDK-AppsFlyer'",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "yanlong": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK-AppsFlyer/0.1.6/EPTrackSDK-AppsFlyer.framework.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "dependencies": {
+    "EPSDKBase": [
+
+    ],
+    "EPTrackSDK": [
+
+    ],
+    "AppsFlyerFramework": [
+      "6.5.3"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "prefix_header_contents": "",
+  "vendored_frameworks": "EPTrackSDK-AppsFlyer.framework"
+}
