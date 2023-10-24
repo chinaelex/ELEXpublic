@@ -11,7 +11,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK/0.1.6/EPSDK.framework.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPSDK/0.1.6/EPSDK.framework.zip",
     "type": "zip"
   },
   "platforms": {
