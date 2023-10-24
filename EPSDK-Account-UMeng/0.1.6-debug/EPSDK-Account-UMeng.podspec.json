@@ -1,0 +1,38 @@
+{
+  "name": "EPSDK-Account-UMeng",
+  "version": "0.1.6-debug",
+  "summary": "elex 中台账号模块",
+  "description": "elex 中台手机号一键登录模块（友盟）",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "elex": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/debug/EPSDK-Account-UMeng/0.1.6-debug/EPSDK-Account-UMeng_0.1.6-debug_2cbe.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "dependencies": {
+    "EPSDKBase": [
+
+    ],
+    "EPSDK-ElexPassport": [
+
+    ],
+    "UMVerify": [
+      "2.7.0"
+    ],
+    "UMCommon": [
+      "7.4.1"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "vendored_frameworks": "EPSDK-Account-UMeng.framework"
+}
