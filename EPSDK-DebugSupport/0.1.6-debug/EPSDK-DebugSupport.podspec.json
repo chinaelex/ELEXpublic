@@ -1,0 +1,36 @@
+{
+  "name": "EPSDK-DebugSupport",
+  "version": "0.1.6-debug",
+  "summary": "elex 中台支付SDK",
+  "description": "elex 中台Debug工具",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "yanlong": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/debug/EPSDK-DebugSupport/0.1.6-debug/EPSDK-DebugSupport_0.1.6-debug_738d.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "dependencies": {
+    "EPSDKBase": [
+
+    ],
+    "EPSDK": [
+
+    ]
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "vendored_frameworks": "EPSDK-DebugSupport.framework",
+  "resources": [
+    "EPSDK-DebugSupport.framework/Resources/*.bundle",
+    "EPSDK-DebugSupport.framework/Versions/A/Resources/*.bundle"
+  ]
+}
