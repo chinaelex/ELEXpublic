@@ -5,13 +5,14 @@
   "description": "'no more description'",
   "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
   "license": {
-    "type": "MIT"
+    "type": "MIT",
+    "file": "LICENSE"
   },
   "authors": {
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/EPSDK/0.1.6-dev/EPSDK_0.1.6-dev_2120.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPSDK/0.1.6-dev/EPSDK_0.1.6-dev_dcf5.zip",
     "type": "zip"
   },
   "platforms": {
