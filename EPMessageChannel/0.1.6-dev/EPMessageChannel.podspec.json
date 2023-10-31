@@ -12,11 +12,14 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/EPMessageChannel/0.1.6-dev/EPMessageChannel_0.1.6-dev_cf39.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPMessageChannel/0.1.6-dev/EPMessageChannel_0.1.6-dev_19ed.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "10.0"
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
   },
   "libraries": [
     "stdc++",
