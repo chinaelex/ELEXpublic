@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK/0.1.7/EPSDK_0.1.7_a367.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK/0.1.7/EPSDK_0.1.7_8e73.zip",
     "type": "zip"
   },
   "platforms": {
@@ -27,16 +27,16 @@
   ],
   "dependencies": {
     "EPSDKBase": [
-
+      "0.1.7"
     ],
     "ElexWebKit": [
-
+      "0.1.7"
     ],
     "EPOpenPlatform": [
-
+      "0.1.7"
     ],
     "EPMessageChannel": [
-
+      "0.1.7"
     ]
   },
   "vendored_frameworks": "EPSDK.framework",
