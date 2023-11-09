@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/ElexPassport_UMeng/0.1.7-dev/ElexPassport_UMeng_0.1.7-dev_ca0f.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/ElexPassport_UMeng/0.1.7-dev/ElexPassport_UMeng_0.1.7-dev_efcc.zip",
     "type": "zip"
   },
   "platforms": {
@@ -20,10 +20,10 @@
   },
   "dependencies": {
     "EPSDKBase": [
-
+      "0.1.7"
     ],
     "ElexPassport": [
-
+      "0.1.7"
     ],
     "UMVerify": [
       "2.7.0"
