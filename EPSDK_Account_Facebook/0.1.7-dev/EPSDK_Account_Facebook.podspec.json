@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/EPSDK_Account_Facebook/0.1.7-dev/EPSDK_Account_Facebook_0.1.7-dev_f49f.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPSDK_Account_Facebook/0.1.7-dev/EPSDK_Account_Facebook_0.1.7-dev_d500.zip",
     "type": "zip"
   },
   "platforms": {
@@ -20,13 +20,13 @@
   },
   "dependencies": {
     "EPSDKBase": [
-
+      "0.1.7"
     ],
     "EPSDK_Account": [
-
+      "0.1.7"
     ],
     "EPOpenPlatform_Facebook": [
-
+      "0.1.7"
     ]
   },
   "pod_target_xcconfig": {
