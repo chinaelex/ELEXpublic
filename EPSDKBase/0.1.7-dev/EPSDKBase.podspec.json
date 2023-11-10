@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/EPSDKBase/0.1.7-dev/EPSDKBase_0.1.7-dev_232d.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPSDKBase/0.1.7-dev/EPSDKBase_0.1.7-dev_198a.zip",
     "type": "zip"
   },
   "platforms": {
@@ -22,6 +22,11 @@
     "stdc++",
     "z"
   ],
+  "dependencies": {
+    "EPSDKMasonry": [
+      "1.1.0"
+    ]
+  },
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
