@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/ElexPassport/0.1.7/ElexPassport_0.1.7_14e5.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/ElexPassport/0.1.7/ElexPassport_0.1.7_e655.zip",
     "type": "zip"
   },
   "platforms": {
@@ -24,6 +24,9 @@
     ],
     "EPSDK": [
       "0.1.7"
+    ],
+    "EPSDKMasonry": [
+      "1.1.0"
     ]
   },
   "pod_target_xcconfig": {
