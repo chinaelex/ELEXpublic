@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/ElexWebKit/0.1.7-dev/ElexWebKit_0.1.7-dev_d805.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/ElexWebKit/0.1.7-dev/ElexWebKit_xcframework_0.1.7-dev_7a1f.zip",
     "type": "zip"
   },
   "platforms": {
@@ -34,5 +34,5 @@
     "DEFINES_MODULE": "YES"
   },
   "prefix_header_contents": "",
-  "vendored_frameworks": "ElexWebKit.framework"
+  "vendored_frameworks": "ElexWebKit.xcframework"
 }
