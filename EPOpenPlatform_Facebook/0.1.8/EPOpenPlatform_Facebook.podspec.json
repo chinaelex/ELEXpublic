@@ -1,0 +1,44 @@
+{
+  "name": "EPOpenPlatform_Facebook",
+  "version": "0.1.8",
+  "summary": "EPOpenPlatform_Facebook",
+  "description": "EPSDK Facebook 接入模块",
+  "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
+  "license": {
+    "type": "MIT",
+    "text": "Copyright (c) 2023 Beijing Elex Technology Co., Ltd.\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  "authors": {
+    "elex": "yanlong@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/EPOpenPlatform_Facebook/0.1.8/EPOpenPlatform_Facebook_xcframework_0.1.8_5a91.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "libraries": [
+    "stdc++",
+    "z"
+  ],
+  "dependencies": {
+    "EPOpenPlatform": [
+      "0.1.8"
+    ],
+    "FBSDKCoreKit": [
+      "15.1.0"
+    ],
+    "FBSDKLoginKit": [
+      "15.1.0"
+    ],
+    "FBSDKShareKit": [
+      "15.1.0"
+    ],
+    "FBAEMKit": [
+      "15.1.0"
+    ]
+  },
+  "prefix_header_contents": "",
+  "vendored_frameworks": "EPOpenPlatform_Facebook.xcframework"
+}
