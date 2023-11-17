@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/EPOpenPlatform_Facebook/0.1.7-dev/EPOpenPlatform_Facebook_0.1.7-dev_1af3.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPOpenPlatform_Facebook/0.1.7-dev/EPOpenPlatform_Facebook_xcframework_0.1.7-dev_55b9.zip",
     "type": "zip"
   },
   "platforms": {
@@ -40,5 +40,5 @@
     ]
   },
   "prefix_header_contents": "",
-  "vendored_frameworks": "EPOpenPlatform_Facebook.framework"
+  "vendored_frameworks": "EPOpenPlatform_Facebook.xcframework"
 }
