@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/EPSDKBase/0.1.7-dev/EPSDKBase_xcframework_0.1.7-dev_ffa5.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPSDKBase/0.1.7-dev/EPSDKBase_0.1.7-dev_e90e.zip",
     "type": "zip"
   },
   "platforms": {
@@ -31,5 +31,5 @@
     "DEFINES_MODULE": "YES"
   },
   "prefix_header_contents": "",
-  "vendored_frameworks": "EPSDKBase.xcframework"
+  "vendored_frameworks": "EPSDKBase.framework"
 }
