@@ -12,7 +12,7 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/EPTrackSDK_AppsFlyer/0.1.7-dev/EPTrackSDK_AppsFlyer_0.1.7-dev_1655.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPTrackSDK_AppsFlyer/0.1.7-dev/EPTrackSDK_AppsFlyer_xcframework_0.1.7-dev_a91a.zip",
     "type": "zip"
   },
   "platforms": {
@@ -33,5 +33,5 @@
     "DEFINES_MODULE": "YES"
   },
   "prefix_header_contents": "",
-  "vendored_frameworks": "EPTrackSDK_AppsFlyer.framework"
+  "vendored_frameworks": "EPTrackSDK_AppsFlyer.xcframework"
 }
