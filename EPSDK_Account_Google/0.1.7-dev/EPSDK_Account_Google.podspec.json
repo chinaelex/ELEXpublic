@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/EPSDK_Account_Google/0.1.7-dev/EPSDK_Account_Google_xcframework_0.1.7-dev_81e2.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPSDK_Account_Google/0.1.7-dev/EPSDK_Account_Google_0.1.7-dev_42d6.zip",
     "type": "zip"
   },
   "platforms": {
@@ -32,5 +32,5 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "vendored_frameworks": "EPSDK_Account_Google.xcframework"
+  "vendored_frameworks": "EPSDK_Account_Google.framework"
 }
