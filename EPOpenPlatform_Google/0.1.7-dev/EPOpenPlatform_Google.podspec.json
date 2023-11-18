@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/EPOpenPlatform_Google/0.1.7-dev/EPOpenPlatform_Google_xcframework_0.1.7-dev_c426.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPOpenPlatform_Google/0.1.7-dev/EPOpenPlatform_Google_0.1.7-dev_b4a9.zip",
     "type": "zip"
   },
   "platforms": {
@@ -30,5 +30,5 @@
       "7.0.0"
     ]
   },
-  "vendored_frameworks": "EPOpenPlatform_Google.xcframework"
+  "vendored_frameworks": "EPOpenPlatform_Google.framework"
 }
