@@ -12,7 +12,7 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/EPPay/0.1.7-dev/EPPay_xcframework_0.1.7-dev_5653.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPPay/0.1.7-dev/EPPay_0.1.7-dev_1d2c.zip",
     "type": "zip"
   },
   "platforms": {
@@ -40,11 +40,10 @@
       "/usr/lib/swift"
     ]
   },
-  "vendored_frameworks": "EPPay.xcframework",
-  "ios": {
-    "resource_bundles": {
-      "ElexAssets-Pay": "EPPay.xcframework/Resources/ios/ElexAssets-Pay.bundle"
-    }
-  },
+  "vendored_frameworks": "EPPay.framework",
+  "resources": [
+    "EPPay.framework/Resources/*.bundle",
+    "EPPay.framework/Versions/A/Resources/*.bundle"
+  ],
   "swift_version": "5.5"
 }
