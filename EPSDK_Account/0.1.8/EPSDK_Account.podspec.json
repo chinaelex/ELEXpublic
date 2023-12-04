@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_Account/0.1.8/EPSDK_Account_xcframework_0.1.8_cf5a.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_Account/0.1.8/EPSDK_Account_0.1.8_1cda.zip",
     "type": "zip"
   },
   "platforms": {
@@ -29,10 +29,9 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "vendored_frameworks": "EPSDK_Account.xcframework",
-  "ios": {
-    "resource_bundles": {
-      "ElexAssetsAccount": "EPSDK_Account.xcframework/Resources/ios/ElexAssetsAccount.bundle"
-    }
-  }
+  "vendored_frameworks": "EPSDK_Account.framework",
+  "resources": [
+    "EPSDK_Account.framework/Resources/*.bundle",
+    "EPSDK_Account.framework/Versions/A/Resources/*.bundle"
+  ]
 }
