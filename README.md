@@ -350,7 +350,7 @@ void epsdkTrack(const char *eventName, const char *payload);
 void epsdkTrackEvent(int platformType, const char *eventName, const char *payload);
 
 /** 获取 AppsFlyer属性*/
-    const char *epsdkAppsFlyerAttrs(void);
+const char *epsdkAppsFlyerAttrs(void);
 ```
 
 ## 跳转
