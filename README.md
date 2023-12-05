@@ -2,8 +2,9 @@
 
 ELEX中台 iOS SDK CocoaPods specifications.
 
-![Objective-C](https://img.shields.io/badge/Objective--C-orange.svg?style=flat)
-![Platform](https://img.shields.io/badge/platform-iOS-red.svg?style=flat)
+![Objective-C](https://img.shields.io/badge/Objective--C-blue.svg?style=flat)
+![Swift-5](https://img.shields.io/badge/Swift-5-red.svg?style=flat)
+![Platform](https://img.shields.io/badge/platform-iOS-A1A1A1?style=flat)
 ![Region](https://img.shields.io/badge/region-CN_|_Oversea-green.svg?style=flat)
 ![version](https://img.shields.io/badge/iOS-10.0-orange.svg?style=flat)
 
@@ -11,7 +12,7 @@ ELEX中台 iOS SDK CocoaPods specifications.
 
 - iOS 10.0+
 - Xcode 13.0+
-- Swift 5.0+
+- Swift 5.5+
 
 ## Features
 - Account(账号)
