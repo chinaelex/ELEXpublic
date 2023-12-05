@@ -12,7 +12,7 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/EPSDK_DebugSupport/0.1.7-dev/EPSDK_DebugSupport_0.1.7-dev_4eeb.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPSDK_DebugSupport/0.1.7-dev/EPSDK_DebugSupport_0.1.7-dev_ea29.zip",
     "type": "zip"
   },
   "platforms": {
@@ -27,6 +27,9 @@
     ],
     "EPSDKMasonry": [
       "1.1.0"
+    ],
+    "ZipKit": [
+      "1.0.3"
     ]
   },
   "pod_target_xcconfig": {
