@@ -78,7 +78,9 @@ epsdkLogin(0)
 
 
 ### 游客登录
-```objc
+```ruby
+platform :ios, '10.0'
+
 target 'UnityFramework' do
   pod 'EPSDK_Account'
 end
@@ -124,7 +126,7 @@ end
 epsdkLogin(3)
 ```
 
-==**手机号验证码登录和Umeng手机号一键登录都属于渠道登录，SDK会根据是否有Umeng登录插件和Umeng一键登录可用来判断使用Umeng一键登录还是手机号验证码登录**==
+ `手机号验证码登录和Umeng手机号一键登录都属于渠道登录，SDK会根据是否有Umeng登录插件和Umeng一键登录可用来判断使用Umeng一键登录还是手机号验证码登录; `
 
 ### Facebook登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat) ![version](https://img.shields.io/badge/iOS-12.0-orange.svg?style=flat)
 
@@ -223,7 +225,7 @@ target 'UnityFramework' do
   pod 'EPSDK_AntiAddict'
 end
 ```
-==**防沉迷起作用依赖于两个因素，1.插件正常引入；2.国内渠道登录后返回实名信息；**==
+`防沉迷起作用依赖于两个因素，1.插件正常引入；2.国内渠道登录后返回实名信息； `
 
 ## Pay
 ```ruby
