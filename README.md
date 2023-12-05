@@ -1,11 +1,17 @@
-# elex sdk repo
+# Elex SDK Repo
+
+ELEX中台 iOS SDK CocoaPods specifications.
 
 ![Objective-C](https://img.shields.io/badge/Objective--C-orange.svg?style=flat)
 ![Platform](https://img.shields.io/badge/platform-iOS-red.svg?style=flat)
 ![Region](https://img.shields.io/badge/region-CN_|_Oversea-green.svg?style=flat)
 ![version](https://img.shields.io/badge/iOS-10.0-orange.svg?style=flat)
 
-ELEX中台 iOS SDK Cocoapods specifications.
+## Requirements
+
+- iOS 10.0+
+- Xcode 13.0+
+- Swift 5.0+
 
 ## Features
 - Account(账号)
@@ -23,7 +29,7 @@ ELEX中台 iOS SDK Cocoapods specifications.
 - Apple登录 ![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat)
 - 游客登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat)
 - 邮箱登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat)
-- Facebook登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat)
+- Facebook登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat) ![version](https://img.shields.io/badge/iOS-12.0-orange.svg?style=flat)
 - Google登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat)
 
 ### Pay
@@ -33,14 +39,23 @@ ELEX中台 iOS SDK Cocoapods specifications.
 ### Report
 - ElexData自研埋点 ![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat)
 - AppsFlyer埋点 ![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat)
-- Facebook埋点 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat)
+- Facebook埋点 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat) ![version](https://img.shields.io/badge/iOS-12.0-orange.svg?style=flat)
 - Firebase埋点  ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat)
 
-## Installing
 
-EPSDK支持[CocoaPods](https://cocoapods.org)或手动接入，各个模块如无特殊说明，支持的最低系统版本为iOS10.0；
+## Installation
+
+EPSDK支持[CocoaPods](https://cocoapods.org)接入，各个模块如无特殊说明，支持的最低系统版本为iOS10.0；
 ### CocoaPods
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
 ```ruby
+source 'git@git.elex-tech.com:opt-connect/open-ios/elex-sdk-repo.git'
+source 'https://cdn.cocoapods.org'
 platform :ios, '10.0'
 
 target 'UnityFramework' do
@@ -48,8 +63,13 @@ target 'UnityFramework' do
 end
 ```
 
-<!-- -->### Install manually
+Then, run the following command:
 
+```bash
+$ pod install
+```
+
+# Usage
 
 ## Account 接入
 
@@ -71,8 +91,8 @@ end
     }
  }];
 ```
-#### C++ usage
-``` C++
+#### C /C++ usage
+```c
 epsdkLogin(0)
 ```
 
@@ -95,8 +115,8 @@ end
     }
  }];
 ```
-#### C++ usage
-``` C++
+#### C /C++ usage
+```c
 epsdkLogin(1)
 ```
 
@@ -121,12 +141,12 @@ end
     }
  }];
 ```
-#### C++ usage
-``` C++
+#### C /C++ usage
+```c
 epsdkLogin(3)
 ```
-
- `手机号验证码登录和Umeng手机号一键登录都属于渠道登录，SDK会根据是否有Umeng登录插件和Umeng一键登录可用来判断使用Umeng一键登录还是手机号验证码登录; `
+**Note:**
+> 手机号验证码登录和Umeng手机号一键登录都属于渠道登录，SDK会根据是否有Umeng登录插件和Umeng一键登录可用来判断使用Umeng一键登录还是手机号验证码登录; 
 
 ### Facebook登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat) ![version](https://img.shields.io/badge/iOS-12.0-orange.svg?style=flat)
 
@@ -164,8 +184,8 @@ end
     }
  }];
 ```
-#### C++ usage
-``` C++
+#### C /C++ usage
+```c
 epsdkLogin(20)
 ```
 
@@ -188,12 +208,14 @@ end
     }
  }];
 ```
-#### C++ usage
-``` C++
+#### C /C++ usage
+```c
 epsdkLogin(21)
 ```
 
 ### Apple登录 ![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat) 
+
+> xcode添加sign in with apple
 
 ```ruby
 platform :ios, '10.0’
@@ -212,12 +234,12 @@ end
     }
  }];
 ```
-#### C++ usage
-``` C++
+#### C /C++ usage
+```c
 epsdkLogin(23)
 ```
 
-## 放沉迷 ![CN](https://img.shields.io/badge/CN-green.svg?style=flat) 
+## 防沉迷 ![CN](https://img.shields.io/badge/CN-green.svg?style=flat) 
 ```ruby
 platform :ios, '10.0’
 
@@ -225,7 +247,10 @@ target 'UnityFramework' do
   pod 'EPSDK_AntiAddict'
 end
 ```
-`防沉迷起作用依赖于两个因素，1.插件正常引入；2.国内渠道登录后返回实名信息； `
+**Note:**
+> 防沉迷起作用依赖于两个因素，
+> - 1.插件正常引入；
+> - 2.国内渠道登录后返回实名信息；
 
 ## Pay
 ```ruby
@@ -245,14 +270,17 @@ end
 - (void)pay:(EPPayRequest *)payRequest completion: (void (^)(NSError *_Nullable error))completion;
 ```
 
-#### C++ usage
-``` C++
+#### C /C++ usage
+```c
 /** 购买商品*/
 void epsdkiapBuyProductInfo(const char *jsonString);
 
 /**  支付接口*/
 void epsdkPay(const char *product);
 ```
+**⚠️ ⚠️ ⚠️ Note:**
+> StoreKit2 版本支付需要swift标准库支持，游戏需要支持的iOS系统版本<12.3版本时需要导入swift库，否则在版本小于12.3的系统上启动闪退;
+> 设置Target Unity-iPhone的Always Embed Swift Standard Libraries为YES；Target UnityFramework的Always Embed Swift Standard Libraries为NO；
 
 
 ### 获取商品详情
@@ -263,8 +291,8 @@ void epsdkPay(const char *product);
 ///   - completion: 完成回调
 - (void)getDetailOfProducts:(NSArray<NSString *> *)productIds completion:(void (^)(NSError * _Nullable error, NSArray<EPPayProduct *> * _Nullable productInfos))completion;
 ```
-#### C++ usage
-``` C++
+#### C /C++ usage
+```c
 /** 请求IAP内购产品信息*/
 void epsdkiapRequestProductsFromAppleServer(const char *jsonString);
 ```
@@ -306,8 +334,8 @@ end
 - (nullable NSDictionary *)getReportAttributesForPlatformType:(EPTrackPlatformType)pType;
 ```
 
-#### C++ usage
-``` C++
+#### C /C++ usage
+```c
 /// 埋点接口
 /// - Parameters:
 ///   - eventName: 事件名称
@@ -353,8 +381,8 @@ typedef NS_ENUM(NSInteger,EPSDKJumpErrorCode) {
 };
 ```
 
-## MARK
-==**EPSDK使用cocoapods方式接入，在unity2019之后的版本，unity统一导出UnityFramework.framework,SDK需要接入到framework中，需要在Podfile中修改SDK的target的依赖。**==
+**Note:**
+> EPSDK使用cocoapods方式接入，在unity2019之后的版本，unity统一导出UnityFramework.framework,SDK需要接入到framework中，需要在Podfile中修改SDK的target的依赖。
 
 ```ruby
 post_install do |installer|
