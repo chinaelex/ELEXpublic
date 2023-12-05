@@ -1,8 +1,9 @@
 # elex sdk repo
 
-![Objective-C](https://img.shields.io/badge/Objective-C-orange.svg?style=flat)
+![Objective-C](https://img.shields.io/badge/Objective--C-orange.svg?style=flat)
 ![Platform](https://img.shields.io/badge/platform-iOS-red.svg?style=flat)
 ![Region](https://img.shields.io/badge/region-CN_|_Oversea-green.svg?style=flat)
+![version](https://img.shields.io/badge/iOS-10.0-orange.svg?style=flat)
 
 ELEX中台 iOS SDK Cocoapods specifications.
 
@@ -61,7 +62,7 @@ target 'UnityFramework' do
 end
 ```
 #### Obj-C usage
-```Objective-C
+```objc
 [[EPSDK sharedSDK] loginWithType:EPLoginTypeAuto complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
     if(error){
     //处理失败
@@ -72,7 +73,7 @@ end
 ```
 #### C++ usage
 ``` C++
-	epsdkLogin(0)
+epsdkLogin(0)
 ```
 
 
@@ -82,7 +83,7 @@ target 'UnityFramework' do
 end
 ```
 #### Obj-C usage
-```Objective-C
+```objc
 [[EPSDK sharedSDK] loginWithType:EPLoginTypeGuest complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
     if(error){
     //处理失败
@@ -93,7 +94,7 @@ end
 ```
 #### C++ usage
 ``` C++
-	epsdkLogin(1)
+epsdkLogin(1)
 ```
 
 
@@ -108,7 +109,7 @@ target 'UnityFramework' do
 end
 ```
 #### Obj-C usage
-```Objective-C
+```objc
 [[EPSDK sharedSDK] loginWithType:EPLoginTypeChannel complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
     if(error){
     //处理失败
@@ -119,7 +120,7 @@ end
 ```
 #### C++ usage
 ``` C++
-	epsdkLogin(3)
+epsdkLogin(3)
 ```
 
 ==**手机号验证码登录和Umeng手机号一键登录都属于渠道登录，SDK会根据是否有Umeng登录插件和Umeng一键登录可用来判断使用Umeng一键登录还是手机号验证码登录**==
@@ -130,7 +131,7 @@ end
 platform :ios, '12.0’
 
 target 'UnityFramework' do
-	pod 'EPSDK_Account_Facebook'
+  pod 'EPSDK_Account_Facebook'
 end
 ```
 
@@ -140,7 +141,7 @@ end
 - FacebookClientToken:xxxxxxx
 - FacebookDisplayName:xxxx
 添加URL Schemes
-``` XML
+```xml
 <key>LSApplicationQueriesSchemes</key>
 <array>
      <string>fbauth2</string>
@@ -151,7 +152,7 @@ end
 </array>
 ```
 #### Obj-C usage
-```Objective-C
+```objc
 [[EPSDK sharedSDK] loginWithType:EPLoginTypeFacebook complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
     if(error){
     //处理失败
@@ -162,7 +163,7 @@ end
 ```
 #### C++ usage
 ``` C++
-	epsdkLogin(20)
+epsdkLogin(20)
 ```
 
 ### Google登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat) 
@@ -171,11 +172,11 @@ end
 platform :ios, '10.0’
 
 target 'UnityFramework' do
-	pod 'EPSDK_Account_Google'
+  pod 'EPSDK_Account_Google'
 end
 ```
 #### Obj-C usage
-```Objective-C
+```objc
 [[EPSDK sharedSDK] loginWithType:EPLoginTypeGoogle complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
     if(error){
     //处理失败
@@ -186,7 +187,7 @@ end
 ```
 #### C++ usage
 ``` C++
-	epsdkLogin(21)
+epsdkLogin(21)
 ```
 
 ### Apple登录 ![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat) 
@@ -195,11 +196,11 @@ end
 platform :ios, '10.0’
 
 target 'UnityFramework' do
-	pod 'EPSDK_Account'
+  pod 'EPSDK_Account'
 end
 ```
 #### Obj-C usage
-```Objective-C
+```objc
 [[EPSDK sharedSDK] loginWithType:EPLoginTypeApple complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
     if(error){
     //处理失败
@@ -210,7 +211,7 @@ end
 ```
 #### C++ usage
 ``` C++
-	epsdkLogin(23)
+epsdkLogin(23)
 ```
 
 ## 放沉迷 ![CN](https://img.shields.io/badge/CN-green.svg?style=flat) 
@@ -218,7 +219,7 @@ end
 platform :ios, '10.0’
 
 target 'UnityFramework' do
-	pod 'EPSDK_AntiAddict'
+  pod 'EPSDK_AntiAddict'
 end
 ```
 ==**防沉迷起作用依赖于两个因素，1.插件正常引入；2.国内渠道登录后返回实名信息；**==
@@ -228,12 +229,12 @@ end
 platform :ios, '10.0’
 
 target 'UnityFramework' do
-	pod 'EPPay’
+  pod 'EPPay’
 end
 ```
 ### 支付接口
 #### Obj-C usage
-```Objective-C
+```objc
 /// 开始支付
 /// - Parameters:
 ///   - payRequest: 支付请求，详情看EPPayRequest类
@@ -252,7 +253,7 @@ void epsdkPay(const char *product);
 
 
 ### 获取商品详情
-```Objective-C
+```objc
 /// 获取商品信息
 /// - Parameters:
 ///   - productIds: 商品Id数组
@@ -270,19 +271,19 @@ void epsdkiapRequestProductsFromAppleServer(const char *jsonString);
 platform :ios, '10.0’
 
 target 'UnityFramework' do
-	pod 'EPTrackSDK'
+  pod 'EPTrackSDK'
 # elex埋点（可选）
-	pod 'EPTrackSDK_ElexData'
+  pod 'EPTrackSDK_ElexData'
 #af埋点（可选）
-	pod 'EPTrackSDK_AppsFlyer'
+  pod 'EPTrackSDK_AppsFlyer'
 #firebase埋点（可选）
-	pod 'EPTrackSDK_Firebase'
-#facebook埋点（可选）
-	pod 'EPTrackSDK_Facebook'
+  pod 'EPTrackSDK_Firebase'
+#facebook埋点（可选,ios12.0）
+  pod 'EPTrackSDK_Facebook'
 end
 ```
 #### Obj-C usage
-```Objective-C
+```objc
 /// 上报埋点
 /// - Parameters:
 ///   - pType: 埋点平台
@@ -324,7 +325,7 @@ void epsdkTrackEvent(int platformType, const char *eventName, const char *payloa
 ## 跳转
 
 #### Obj-C usage
-```Objective-C
+```objc
 /// 跳转到指定URL
 ///
 /// 如跳转到商店页面
@@ -339,7 +340,7 @@ void epsdkTrackEvent(int platformType, const char *eventName, const char *payloa
 ```
 
 #### 错误码
-```Objective-C
+```objc
 /// EPSDK跳转错误码
 typedef NS_ENUM(NSInteger,EPSDKJumpErrorCode) {
     EPSDKJumpErrorCodeCancel = -10000,
