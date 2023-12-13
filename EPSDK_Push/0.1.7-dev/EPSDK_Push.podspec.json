@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/dev/EPSDK_Push/0.1.7-dev/EPSDK_Push_0.1.7-dev_f8e6.zip",
+    "http": "http://cocoapods.elex-tech.com/dev/EPSDK_Push/0.1.7-dev/EPSDK_Push_xcframework_0.1.7-dev_ca7b.zip",
     "type": "zip"
   },
   "platforms": {
@@ -39,5 +39,5 @@
       "0.1.7"
     ]
   },
-  "vendored_frameworks": "EPSDK_Push.framework"
+  "vendored_frameworks": "EPSDK_Push.xcframework"
 }
