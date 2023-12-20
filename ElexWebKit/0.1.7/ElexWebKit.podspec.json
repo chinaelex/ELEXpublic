@@ -12,27 +12,29 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/ElexWebKit/0.1.7/ElexWebKit_0.1.7_0b19.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/ElexWebKit/0.1.7/ElexWebKit_0.1.7_4ee4.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "libraries": [
-    "stdc++",
-    "z"
-  ],
   "dependencies": {
+    "EPSDKMasonry": [
+      "1.1.0"
+    ],
     "EPSDKBase": [
       "0.1.7"
     ],
-    "EPSDKMasonry": [
-      "1.1.0"
+    "EPMessageChannel": [
+      "0.1.7"
     ]
   },
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "prefix_header_contents": "",
-  "vendored_frameworks": "ElexWebKit.framework"
+  "vendored_frameworks": "ElexWebKit.framework",
+  "resources": [
+    "ElexWebKit.framework/Resources/*.bundle",
+    "ElexWebKit.framework/Versions/A/Resources/*.bundle"
+  ]
 }
