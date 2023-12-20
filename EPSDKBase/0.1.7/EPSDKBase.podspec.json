@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDKBase/0.1.7/EPSDKBase_0.1.7_55eb.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDKBase/0.1.7/EPSDKBase_0.1.7_cac6.zip",
     "type": "zip"
   },
   "platforms": {
@@ -23,6 +23,9 @@
     "z"
   ],
   "dependencies": {
+    "ElexCommon": [
+      "0.1.7"
+    ],
     "CocoaLumberjack": [
       "3.7.4"
     ],
