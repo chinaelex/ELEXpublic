@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK/0.1.7/EPSDK_0.1.7_03b5.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK/0.1.7/EPSDK_0.1.7_fcb9.zip",
     "type": "zip"
   },
   "platforms": {
@@ -36,6 +36,9 @@
       "0.1.7"
     ],
     "EPMessageChannel": [
+      "0.1.7"
+    ],
+    "ElexNetworking": [
       "0.1.7"
     ]
   },
