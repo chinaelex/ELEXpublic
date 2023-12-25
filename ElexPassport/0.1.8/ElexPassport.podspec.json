@@ -12,21 +12,24 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/ElexPassport/0.1.8/ElexPassport_0.1.8_d6a7.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/ElexPassport/0.1.8/ElexPassport_0.1.8_9c9c.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "10.0"
   },
   "dependencies": {
+    "EPSDKMasonry": [
+      "1.1.0"
+    ],
     "EPSDKBase": [
       "0.1.8"
     ],
     "EPSDK": [
       "0.1.8"
     ],
-    "EPSDKMasonry": [
-      "1.1.0"
+    "ElexKeyboardManager": [
+      "0.1.8"
     ]
   },
   "pod_target_xcconfig": {
