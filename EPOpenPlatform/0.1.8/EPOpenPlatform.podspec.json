@@ -12,20 +12,11 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPOpenPlatform/0.1.8/EPOpenPlatform_0.1.8_543c.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPOpenPlatform/0.1.8/EPOpenPlatform_0.1.8_48bd.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "10.0"
-  },
-  "libraries": [
-    "stdc++",
-    "z"
-  ],
-  "dependencies": {
-    "EPSDKBase": [
-      "0.1.8"
-    ]
   },
   "vendored_frameworks": "EPOpenPlatform.framework"
 }
