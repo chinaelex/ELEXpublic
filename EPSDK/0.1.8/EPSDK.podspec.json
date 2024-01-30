@@ -47,7 +47,7 @@
   },
   "vendored_frameworks": "EPSDK.xcframework",
   "ios": {
-    "resource_bundles": {
+    "resources": {
       "EPSDK": "EPSDK.xcframework/Resources/ios/EPSDK.bundle"
     }
   }
