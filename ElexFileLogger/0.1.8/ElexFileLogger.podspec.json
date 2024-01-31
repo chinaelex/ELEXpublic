@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/ElexFileLogger/0.1.8/ElexFileLogger_0.1.8_0403.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/ElexFileLogger/0.1.8/ElexFileLogger_xcframework_0.1.8_d358.zip",
     "type": "zip"
   },
   "platforms": {
@@ -29,5 +29,5 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "vendored_frameworks": "ElexFileLogger.framework"
+  "vendored_frameworks": "ElexFileLogger/ElexFileLogger.xcframework"
 }
