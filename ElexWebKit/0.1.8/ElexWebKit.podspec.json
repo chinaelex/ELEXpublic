@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/ElexWebKit/0.1.8/ElexWebKit_0.1.8_d7dd.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/ElexWebKit/0.1.8/ElexWebKit_xcframework_0.1.8_db1f.zip",
     "type": "zip"
   },
   "platforms": {
@@ -32,9 +32,10 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "vendored_frameworks": "ElexWebKit.framework",
-  "resources": [
-    "ElexWebKit.framework/Resources/*.bundle",
-    "ElexWebKit.framework/Versions/A/Resources/*.bundle"
-  ]
+  "vendored_frameworks": "ElexWebKit/ElexWebKit.xcframework",
+  "ios": {
+    "resources": [
+      "ElexWebKit/Resources/ios/ElexWebKit.bundle"
+    ]
+  }
 }
