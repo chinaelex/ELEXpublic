@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_Account_Facebook/0.1.8/EPSDK_Account_Facebook_xcframework_0.1.8_1f1d.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_Account_Facebook/0.1.8/EPSDK_Account_Facebook_xcframework_0.1.8_7772.zip",
     "type": "zip"
   },
   "platforms": {
@@ -32,5 +32,8 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "vendored_frameworks": "EPSDK_Account_Facebook/EPSDK_Account_Facebook.xcframework"
+  "vendored_frameworks": [
+    "EPSDK_Account_Facebook/EPSDK_Account_Facebook.xcframework",
+    "EPSDK_Account_Facebook/Frameworks/**/*.framework"
+  ]
 }
