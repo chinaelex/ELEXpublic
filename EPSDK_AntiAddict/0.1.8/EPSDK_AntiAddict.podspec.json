@@ -12,7 +12,7 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_AntiAddict/0.1.8/EPSDK_AntiAddict_0.1.8_63b1.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_AntiAddict/0.1.8/EPSDK_AntiAddict_xcframework_0.1.8_f232.zip",
     "type": "zip"
   },
   "platforms": {
@@ -29,9 +29,10 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "vendored_frameworks": "EPSDK_AntiAddict.framework",
-  "resources": [
-    "EPSDK_AntiAddict.framework/Resources/*.bundle",
-    "EPSDK_AntiAddict.framework/Versions/A/Resources/*.bundle"
-  ]
+  "vendored_frameworks": "EPSDK_AntiAddict/EPSDK_AntiAddict.xcframework",
+  "ios": {
+    "resources": [
+      "EPSDK_AntiAddict/Resources/ios/EPAntiAddict.bundle"
+    ]
+  }
 }
