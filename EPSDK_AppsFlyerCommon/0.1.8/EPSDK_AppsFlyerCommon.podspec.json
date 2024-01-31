@@ -12,7 +12,7 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_AppsFlyerCommon/0.1.8/EPSDK_AppsFlyerCommon_0.1.8_b5f1.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_AppsFlyerCommon/0.1.8/EPSDK_AppsFlyerCommon_xcframework_0.1.8_9be4.zip",
     "type": "zip"
   },
   "platforms": {
@@ -32,5 +32,5 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "vendored_frameworks": "EPSDK_AppsFlyerCommon.framework"
+  "vendored_frameworks": "EPSDK_AppsFlyerCommon/EPSDK_AppsFlyerCommon.xcframework"
 }
