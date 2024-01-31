@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_AIHelp/0.1.8/EPSDK_AIHelp_xcframework_0.1.8_25be.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_AIHelp/0.1.8/EPSDK_AIHelp_xcframework_0.1.8_d56e.zip",
     "type": "zip"
   },
   "platforms": {
@@ -32,5 +32,8 @@
       "4.5.0"
     ]
   },
-  "vendored_frameworks": "EPSDK_AIHelp/EPSDK_AIHelp.xcframework"
+  "vendored_frameworks": [
+    "EPSDK_AIHelp/EPSDK_AIHelp.xcframework",
+    "EPSDK_AIHelp/Frameworks/**/*.framework"
+  ]
 }
