@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/ElexNetworking/0.1.8/ElexNetworking_0.1.8_7fa6.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/ElexNetworking/0.1.8/ElexNetworking_xcframework_0.1.8_2c35.zip",
     "type": "zip"
   },
   "platforms": {
@@ -21,5 +21,5 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "vendored_frameworks": "ElexNetworking.framework"
+  "vendored_frameworks": "ElexNetworking/ElexNetworking.xcframework"
 }
