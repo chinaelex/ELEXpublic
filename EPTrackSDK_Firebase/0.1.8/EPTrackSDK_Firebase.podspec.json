@@ -12,7 +12,7 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_Firebase/0.1.8/EPTrackSDK_Firebase_0.1.8_29ae.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_Firebase/0.1.8/EPTrackSDK_Firebase_xcframework_0.1.8_bd56.zip",
     "type": "zip"
   },
   "platforms": {
@@ -33,5 +33,5 @@
     "DEFINES_MODULE": "YES"
   },
   "prefix_header_contents": "",
-  "vendored_frameworks": "EPTrackSDK_Firebase.framework"
+  "vendored_frameworks": "EPTrackSDK_Firebase/EPTrackSDK_Firebase.xcframework"
 }
