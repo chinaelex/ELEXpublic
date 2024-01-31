@@ -12,7 +12,7 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_ElexData/0.1.8/EPTrackSDK_ElexData_xcframework_0.1.8_6608.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_ElexData/0.1.8/EPTrackSDK_ElexData_xcframework_0.1.8_fc9b.zip",
     "type": "zip"
   },
   "platforms": {
@@ -26,7 +26,10 @@
       "0.1.8"
     ]
   },
-  "vendored_frameworks": "EPTrackSDK_ElexData/EPTrackSDK_ElexData.xcframework",
+  "vendored_frameworks": [
+    "EPTrackSDK_ElexData/EPTrackSDK_ElexData.xcframework",
+    "EPTrackSDK_ElexData/Frameworks/**/*.framework"
+  ],
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
