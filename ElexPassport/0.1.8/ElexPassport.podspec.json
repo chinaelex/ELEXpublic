@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/ElexPassport/0.1.8/ElexPassport_xcframework_0.1.8_64d4.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/ElexPassport/0.1.8/ElexPassport_xcframework_0.1.8_bb72.zip",
     "type": "zip"
   },
   "platforms": {
@@ -35,11 +35,10 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "vendored_frameworks": [
-    "ElexPassport/ElexPassport.xcframework",
-    "ElexPassport/Frameworks/**/*.framework"
-  ],
   "ios": {
+    "vendored_frameworks": [
+      "ElexPassport/ElexPassport.xcframework"
+    ],
     "resources": [
       "ElexPassport/Resources/ios/ElexPassport.bundle"
     ]
