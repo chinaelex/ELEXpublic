@@ -12,7 +12,7 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_DebugSupport/0.1.8/EPSDK_DebugSupport_xcframework_0.1.8_d254.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_DebugSupport/0.1.8/EPSDK_DebugSupport_xcframework_0.1.8_fa91.zip",
     "type": "zip"
   },
   "platforms": {
@@ -35,11 +35,10 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "vendored_frameworks": [
-    "EPSDK_DebugSupport/EPSDK_DebugSupport.xcframework",
-    "EPSDK_DebugSupport/Frameworks/**/*.framework"
-  ],
   "ios": {
+    "vendored_frameworks": [
+      "EPSDK_DebugSupport/EPSDK_DebugSupport.xcframework"
+    ],
     "resources": [
       "EPSDK_DebugSupport/Resources/ios/EPDebugSupport.bundle"
     ]
