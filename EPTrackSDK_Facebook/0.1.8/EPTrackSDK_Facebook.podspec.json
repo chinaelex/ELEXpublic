@@ -12,7 +12,7 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_Facebook/0.1.8/EPTrackSDK_Facebook_xcframework_0.1.8_de41.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_Facebook/0.1.8/EPTrackSDK_Facebook_xcframework_0.1.8_6dcc.zip",
     "type": "zip"
   },
   "platforms": {
@@ -33,8 +33,9 @@
     "DEFINES_MODULE": "YES"
   },
   "prefix_header_contents": "",
-  "vendored_frameworks": [
-    "EPTrackSDK_Facebook/EPTrackSDK_Facebook.xcframework",
-    "EPTrackSDK_Facebook/Frameworks/**/*.framework"
-  ]
+  "ios": {
+    "vendored_frameworks": [
+      "EPTrackSDK_Facebook/EPTrackSDK_Facebook.xcframework"
+    ]
+  }
 }
