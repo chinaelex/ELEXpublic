@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_Push/0.1.8/EPSDK_Push_xcframework_0.1.8_ea08.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_Push/0.1.8/EPSDK_Push_xcframework_0.1.8_991b.zip",
     "type": "zip"
   },
   "platforms": {
@@ -39,8 +39,9 @@
       "0.1.8"
     ]
   },
-  "vendored_frameworks": [
-    "EPSDK_Push/EPSDK_Push.xcframework",
-    "EPSDK_Push/Frameworks/**/*.framework"
-  ]
+  "ios": {
+    "vendored_frameworks": [
+      "EPSDK_Push/EPSDK_Push.xcframework"
+    ]
+  }
 }
