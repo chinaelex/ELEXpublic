@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/ElexCommon/0.1.8/ElexCommon_xcframework_0.1.8_511f.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/ElexCommon/0.1.8/ElexCommon_xcframework_0.1.8_9878.zip",
     "type": "zip"
   },
   "platforms": {
@@ -25,8 +25,9 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "vendored_frameworks": [
-    "ElexCommon/ElexCommon.xcframework",
-    "ElexCommon/Frameworks/**/*.framework"
-  ]
+  "ios": {
+    "vendored_frameworks": [
+      "ElexCommon/ElexCommon.xcframework"
+    ]
+  }
 }
