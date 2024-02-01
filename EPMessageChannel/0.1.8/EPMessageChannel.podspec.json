@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPMessageChannel/0.1.8/EPMessageChannel_xcframework_0.1.8_685c.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPMessageChannel/0.1.8/EPMessageChannel_xcframework_0.1.8_a295.zip",
     "type": "zip"
   },
   "platforms": {
@@ -30,8 +30,9 @@
       "0.1.8"
     ]
   },
-  "vendored_frameworks": [
-    "EPMessageChannel/EPMessageChannel.xcframework",
-    "EPMessageChannel/Frameworks/**/*.framework"
-  ]
+  "ios": {
+    "vendored_frameworks": [
+      "EPMessageChannel/EPMessageChannel.xcframework"
+    ]
+  }
 }
