@@ -25,7 +25,7 @@ source 'https://cdn.cocoapods.org'
 platform :ios, '10.0'
 
 target 'UnityFramework' do
-  pod 'EPSDK_Account’
+  pod 'EPSDK_Account'
 end
 ```
 Then, run the following command:
@@ -106,8 +106,8 @@ end
 {
     "passport": {
         "hidePwdLogin": false,
-        "oauthAppKey": "64818d92e31d6071ec4c7db9",
-        "oauthSecret": "uh+OGLo43osuvQxOi7r7WHx0r7mK2i244ybuD+w0CPmkWgjmUE3nwJnff5egxKzv80ROXG7od+LWAE8UDQ710p6Al36fApDIDn4GmMLbPqgU7ye3+M3NrMCMTdncAlYjH2+92JL9RdnTaq38c2LpqlIGU8jPVexHXslt3u6V60IYVs/vhvDUl5rdpfm3kPSlDtNMOO3Em/liU95Tcrz6/mWOqDjMLqRhvZ4YtTHm5XqE67DeCOAvagPzJwcTcqUOgQ4OmVsPTQZyDnz+QWB2TQ=="
+        "oauthAppKey": "xxxxxx",
+        "oauthSecret": "xxxxxx"
     },
     "isAudit": false,
 }
