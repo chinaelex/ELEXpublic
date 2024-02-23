@@ -1,53 +1,63 @@
-# Elex SDK Repo
+# ELEX中台 iOS SDK.
 
-ELEX中台 iOS SDK CocoaPods specifications.
+<p align="center" >
+  <img src="./Docs/images/logo.png" alt="Elex" title="Elex">
+</p>
 
 ![Objective-C](https://img.shields.io/badge/Objective--C-blue.svg?style=flat)
 ![Swift-5](https://img.shields.io/badge/Swift-5-red.svg?style=flat)
 ![Platform](https://img.shields.io/badge/platform-iOS-A1A1A1?style=flat)
 ![Region](https://img.shields.io/badge/region-CN_|_Oversea-green.svg?style=flat)
-![version](https://img.shields.io/badge/iOS-10.0-orange.svg?style=flat)
+![version](https://img.shields.io/badge/iOS-12.0-orange.svg?style=flat)
 
 ## Requirements
-
-- iOS 10.0+
+- iOS 12.0+
 - Xcode 13.0+
 - Swift 5.5+
 
 ## Features
-- Account(账号)
-- Pay(支付)
-- Report(埋点上报)
-- Jump(跳转)
-
+|   模块   |
+| :-----: |
+|   账号   |
+|   支付   |
+|   埋点   |
+|   跳转   |
+|   推送   |
+|   客服   |
 
 ### Account
+|     登录方式    |  支持地区  | 最低iOS版本 |
+| :------------: | :------: | :--------: |
+|  手机号一键登录  |    国内   |   iOS 10   |
+| 手机号验证码登录 |    国内   |   iOS 10   |
+| 审核账号密码登录 |    国内   |   iOS 10   |
+|    自动登录    | 国内/海外 |   iOS 10   |
+|   Apple登录   |    海外    |   iOS 10   |
+|    游客登录    |    海外    |   iOS 10   |
+|    邮箱登录    |    海外    |   iOS 10   |
+|  Facebook登录  |    海外    |   iOS 12   |
+|   Google登录   |    海外    |   iOS 10   |
 
-- 手机号一键登录 ![CN](https://img.shields.io/badge/CN-green.svg?style=flat)
-- 手机号验证码登录 ![CN](https://img.shields.io/badge/CN-green.svg?style=flat)
-- 审核账号密码登录 ![CN](https://img.shields.io/badge/CN-green.svg?style=flat)
-- 自动登录 ![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat)
-- Apple登录 ![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat)
-- 游客登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat)
-- 邮箱登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat)
-- Facebook登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat) ![version](https://img.shields.io/badge/iOS-12.0-orange.svg?style=flat)
-- Google登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat)
 
 ### Pay
-- IAP内购 ![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat)
-- SK2版本内购 ![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat) ![version](https://img.shields.io/badge/iOS-15.0-orange.svg?style=flat)
+|     IAP    |  支持地区  | 最低iOS版本 |
+| :--------: | :------: | :--------: |
+|  StoreKit  |  国内/海外 |   iOS 10   |
+| StoreKit2  |  国内/海外 |   iOS 15   |
 
 ### Report
-- ElexData自研埋点 ![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat)
-- AppsFlyer埋点 ![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat)
-- Facebook埋点 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat) ![version](https://img.shields.io/badge/iOS-12.0-orange.svg?style=flat)
-- Firebase埋点  ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat)
+|      埋点平台       |  支持地区  | 最低iOS版本 |
+|  :------------:   | :------: | :--------: |
+|  ElexData自研埋点  |  国内/海外 |   iOS 10   |
+|     AppsFlyer     |  国内/海外 |   iOS 10   |
+|     Facebook      |    海外   |   iOS 12   |
+|     Firebase      |    海外   |   iOS 10   |
 
 
-## Installation
+## Installation 
 
-EPSDK支持[CocoaPods](https://cocoapods.org)接入，各个模块如无特殊说明，支持的最低系统版本为iOS10.0；
-### CocoaPods
+EPSDK支持[CocoaPods](https://cocoapods.org)接入
+
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
 ```bash
@@ -71,319 +81,205 @@ $ pod install
 ```
 
 # Usage
+## 配置文件
+添加SDKConfig_iOS.json文件
 
-## Account 接入
+```json
+{
+  "base": {
+    "env": 2,
+    "gameId": 1001,
+    "secret": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "region": "en",
+    "language": "zh-CN",
+    "channel": "appstore",
+    "pkgId": "elex",
+    "userProtocol": "http://www.linekong.com/articles-237-7022.shtml",
+    "privacyPolicy": "http://www.linekong.com/articles-237-7022.shtml",
+  },
+  "apple": {
+    "appId": "xxxxxxxxxx"
+  }
+}
 
-### 自动登录
-```ruby
-platform :ios, '10.0'
-
-target 'UnityFramework' do
-  pod 'EPSDK_Account'
-end
 ```
-#### Obj-C usage
+- base:
+	- env:SDK环境，0:release,1:sandbox,2:dev
+	- gameId: SDK分配的appid
+	- secret: SDK分配密钥
+	- region: 发行地区
+	- language:SDK默认语言
+	- channel:渠道
+	- pkgId:包标识符
+	- userProtocol:用户协议页面地址
+	- privacyPolicy:隐私协议页面地址
+ - apple:
+    - appId: app store app ID    
+---
+## 初始化
+导入头文件
 ```objc
-[[EPSDK sharedSDK] loginWithType:EPLoginTypeAuto complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
-    if(error){
-    //处理失败
-    }else{
-    //处理登录成功
-    }
- }];
+#import <EPSDK/EPSDK.h>
 ```
-#### C /C++ usage
-```c
-epsdkLogin(0)
-```
-
-
-### 游客登录
-```ruby
-platform :ios, '10.0'
-
-target 'UnityFramework' do
-  pod 'EPSDK_Account'
-end
-```
-#### Obj-C usage
+初始化方法
 ```objc
-[[EPSDK sharedSDK] loginWithType:EPLoginTypeGuest complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
-    if(error){
-    //处理失败
-    }else{
-    //处理登录成功
-    }
- }];
-```
-#### C /C++ usage
-```c
-epsdkLogin(1)
-```
+/**
+ 初始化SDK
+ 
+ 开始初始化SDK；首次调用会弹出隐私协议弹框，
 
-
-### 手机号验证码登录 | 审核渠道账号密码登录 | 邮箱登录
-```ruby
-platform :ios, '10.0'
-
-target 'UnityFramework' do
-  pod 'EPSDK_Account_ElexPassport'
-#(友盟登录可选)
-  pod 'ElexPassport_UMeng'
-end
+ @param delegate sdk回调代理
+ @warning 不要在application:didFinishLaunch:中调用；否则弹不出隐私协议弹框；
+ */
+- (void)startWithDelegate:(id<EPSDKDelegate>)delegate;
 ```
-#### Obj-C usage
+示例：
 ```objc
-[[EPSDK sharedSDK] loginWithType:EPLoginTypeChannel complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
-    if(error){
-    //处理失败
-    }else{
-    //处理登录成功
-    }
- }];
+[[EPSDK sharedSDK] startWithDelegate:self];
 ```
-#### C /C++ usage
-```c
-epsdkLogin(3)
-```
-**Note:**
-> 手机号验证码登录和Umeng手机号一键登录都属于渠道登录，SDK会根据是否有Umeng登录插件和Umeng一键登录可用来判断使用Umeng一键登录还是手机号验证码登录; 
-
-### Facebook登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat) ![version](https://img.shields.io/badge/iOS-12.0-orange.svg?style=flat)
-
-```ruby
-platform :ios, '12.0’
-
-target 'UnityFramework' do
-  pod 'EPSDK_Account_Facebook'
-end
-```
-
-#### 配置info.plist
-- FacebookAppID:xxxxxx
-- FacebookAutoLogAppEventsEnabled:（YES ｜ NO）
-- FacebookClientToken:xxxxxxx
-- FacebookDisplayName:xxxx
-添加URL Schemes
-```xml
-<key>LSApplicationQueriesSchemes</key>
-<array>
-     <string>fbauth2</string>
-     <string>fbapi</string>
-     <string>fb-messenger-share-api</string>
-     <string>fb-messenger-api</string>
-     <string>fbshareextension</string>
-</array>
-```
-#### Obj-C usage
+### EPSDK回调代理方法
 ```objc
-[[EPSDK sharedSDK] loginWithType:EPLoginTypeFacebook complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
-    if(error){
-    //处理失败
-    }else{
-    //处理登录成功
-    }
- }];
-```
-#### C /C++ usage
-```c
-epsdkLogin(20)
+
+/// EPSDK回调游戏的代理；
+@protocol EPSDKDelegate <NSObject>
+@optional
+
+///-------------------------------
+/// @name 账号
+///-------------------------------
+
+/** 
+ sdk账号退出回调方法
+ @param epsdk EPSDK实例
+ @param info 附带信息
+ */
+- (void)epsdk:(EPSDK *)epsdk didLogoutWithInfo:(nullable NSDictionary *)info;
+
+/**
+ sdk账号退出回调方法
+ @param epsdk EPSDK实例
+ */
+- (void)epsdkDidLogout:(EPSDK *)epsdk;
+
+///-------------------------------
+/// @name 初始化
+///-------------------------------
+
+/**
+ sdk初始化成功回调
+ @param epsdk EPSDK实例
+*/
+- (void)epsdkDidInitSuccess:(EPSDK *)epsdk;
+
+/**
+ sdk初始化失败回调
+ @param epsdk EPSDK实例
+ @param error 初始化错误信息NSError
+*/
+- (void)epsdk:(EPSDK *)epsdk initError:(NSError *)error;
+
+@end
 ```
 
-### Google登录 ![Oversea](https://img.shields.io/badge/Oversea-green.svg?style=flat) 
-
-```ruby
-platform :ios, '10.0’
-
-target 'UnityFramework' do
-  pod 'EPSDK_Account_Google'
-end
-```
-#### Obj-C usage
+## 进入游戏[必接]
+进入游戏时上报SDK玩家信息；
+warning:此接口必须调用，若不调用支付功能无法正常使用
 ```objc
-[[EPSDK sharedSDK] loginWithType:EPLoginTypeGoogle complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
-    if(error){
-    //处理失败
-    }else{
-    //处理登录成功
-    }
- }];
-```
-#### C /C++ usage
-```c
-epsdkLogin(21)
+/**
+ 进入游戏
+ 
+ 进入游戏时调用此方法，将游戏的角色信息传递给SDK；
+ @param playerInfo 角色信息
+*/
+- (void)enterGameWithPlayerInfo:(EPGamePlayerInfo *)playerInfo;
 ```
 
-### Apple登录 ![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat) 
-
-> xcode添加sign in with apple
-
-```ruby
-platform :ios, '10.0’
-
-target 'UnityFramework' do
-  pod 'EPSDK_Account'
-end
-```
-#### Obj-C usage
 ```objc
-[[EPSDK sharedSDK] loginWithType:EPLoginTypeApple complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
-    if(error){
-    //处理失败
-    }else{
-    //处理登录成功
-    }
- }];
-```
-#### C /C++ usage
-```c
-epsdkLogin(23)
+/**
+ 游戏角色信息类
+ */
+@interface EPGamePlayerInfo : NSObject
+
+/// 角色ID
+@property (copy,   nonatomic) NSString *eppPlayerId;
+/// 角色名称
+@property (copy,   nonatomic) NSString *eppPlayerName;
+/// 游戏服务器ID
+@property (copy,   nonatomic) NSString *eppServerId;
+/// 角色等级
+@property (copy,   nonatomic) NSString *eppLevel;
+/// 角色VIP等级
+@property (copy,   nonatomic) NSString *eppVipLevel;
+/// 角色主城等级
+@property (copy,   nonatomic) NSString *eppCastleLevel;
+/// 角色创建时间
+@property (assign, nonatomic) long long eppCreateTime;
+
+@end
 ```
 
-## 防沉迷 ![CN](https://img.shields.io/badge/CN-green.svg?style=flat) 
-```ruby
-platform :ios, '10.0’
-
-target 'UnityFramework' do
-  pod 'EPSDK_AntiAddict'
-end
-```
-**Note:**
-> 防沉迷起作用依赖于两个因素，
-> - 1.插件正常引入；
-> - 2.国内渠道登录后返回实名信息；
-
-## Pay
-```ruby
-platform :ios, '10.0’
-
-target 'UnityFramework' do
-  pod 'EPPay’
-end
-```
-### 支付接口
-#### Obj-C usage
+## 更新角色信息[必接]
 ```objc
-/// 开始支付
-/// - Parameters:
-///   - payRequest: 支付请求，详情看EPPayRequest类
-///   - completion: 完成回调；error：支付错误信息，成功时error为nil
-- (void)pay:(EPPayRequest *)payRequest completion: (void (^)(NSError *_Nullable error))completion;
+/**
+ 更新游戏的角色信息
+ 
+ 游戏角色信息更新时调用此方法，将更新后的角色信息传递给SDK；
+ @param playerInfo 角色信息
+*/
+- (void)updateGamePlayerInfo:(EPGamePlayerInfo *)playerInfo;
 ```
+---
 
-#### C /C++ usage
-```c
-/** 购买商品*/
-void epsdkiapBuyProductInfo(const char *jsonString);
+## 账号
+[账号](./Docs/Account/README.md)
 
-/**  支付接口*/
-void epsdkPay(const char *product);
-```
-**⚠️ ⚠️ ⚠️ Note:**
-> StoreKit2 版本支付需要swift标准库支持，游戏需要支持的iOS系统版本<12.3版本时需要导入swift库，否则在版本小于12.3的系统上启动闪退;
-> 设置Target Unity-iPhone的Always Embed Swift Standard Libraries为YES；Target UnityFramework的Always Embed Swift Standard Libraries为NO；
+## 防沉迷
+[防沉迷](./Docs/AntiAddict/README.md)
 
-
-### 获取商品详情
-```objc
-/// 获取商品信息
-/// - Parameters:
-///   - productIds: 商品Id数组
-///   - completion: 完成回调
-- (void)getDetailOfProducts:(NSArray<NSString *> *)productIds completion:(void (^)(NSError * _Nullable error, NSArray<EPPayProduct *> * _Nullable productInfos))completion;
-```
-#### C /C++ usage
-```c
-/** 请求IAP内购产品信息*/
-void epsdkiapRequestProductsFromAppleServer(const char *jsonString);
-```
+## 支付
+[支付](./Docs/Pay/README.md)
 
 ## 埋点
-```ruby
-platform :ios, '10.0’
-
-target 'UnityFramework' do
-  pod 'EPTrackSDK'
-# elex埋点（可选）
-  pod 'EPTrackSDK_ElexData'
-#af埋点（可选）
-  pod 'EPTrackSDK_AppsFlyer'
-#firebase埋点（可选）
-  pod 'EPTrackSDK_Firebase'
-#facebook埋点（可选,ios12.0）
-  pod 'EPTrackSDK_Facebook'
-end
-```
-#### Obj-C usage
-```objc
-/// 上报埋点
-/// - Parameters:
-///   - pType: 埋点平台
-///   - pName: 事件名称
-///   - pPayload: 上报参数
-- (void)reportEventWithPlatformType:(EPTrackPlatformType)pType eventName:(NSString *)pName payload:(nullable NSDictionary *)pPayload;
-
-/// 上报埋点，上报到接入的所有平台
-/// - Parameters:
-///   - eventName: 事件名称
-///   - pPayload: 上报参数
-- (void)reportEvent:(NSString *)eventName payload:(nullable NSDictionary *)pPayload;
-
-
-/// 获取上报参数
-/// - Parameter pType: 埋点平台
-- (nullable NSDictionary *)getReportAttributesForPlatformType:(EPTrackPlatformType)pType;
-```
-
-#### C /C++ usage
-```c
-/// 埋点接口
-/// - Parameters:
-///   - eventName: 事件名称
-///   - payload: 埋点参数json字符串
-void epsdkTrack(const char *eventName, const char *payload);
-
-/// 打点接口
-/// - Parameters:
-///   - platformType: 埋点平台
-///   - eventName: 事件名称
-///   - payload: 埋点参数json字符串
-void epsdkTrackEvent(int platformType, const char *eventName, const char *payload);
-
-/** 获取 AppsFlyer属性*/
-const char *epsdkAppsFlyerAttrs(void);
-```
+[埋点](./Docs/Track/README.md)
 
 ## 跳转
+[跳转](./Docs/Jump/README.md)
 
-#### Obj-C usage
-```objc
-/// 跳转到指定URL
-///
-/// 如跳转到商店页面
-/// ``` Objective-C
-/// [[EPSDK sharedSDK] jumpWithURL:@"itms-apps://itunes.apple.com/app/(appId)" completion:nil];
-///
-/// ```
-/// - Parameters:
-///   - url: 跳转链接
-///   - completion: 跳转结果回调
-- (void)jumpWithURL:(NSString *)url completion:(void(^)(NSError *_Nullable error))completion;
-```
+## 推送
+[推送](./Docs/Push/README.md)
 
-#### 错误码
-```objc
-/// EPSDK跳转错误码
-typedef NS_ENUM(NSInteger,EPSDKJumpErrorCode) {
-    EPSDKJumpErrorCodeCancel = -10000,
-    EPSDKJumpErrorCodeURLInvalid = -10001,
-    EPSDKJumpErrorCodeNotSupport = -10002,
-    EPSDKJumpErrorCodeReviewCountLimit = -10003,
-};
-```
+## 客服
+[客服](./Docs/CustomService/README.md)
 
-**Note:**
-> EPSDK使用cocoapods方式接入，在unity2019之后的版本，unity统一导出UnityFramework.framework,SDK需要接入到framework中，需要在Podfile中修改SDK的target的依赖。
+---
+
+## 通用错误码
+|  错误码  |       说明       |
+| :-----: | :--------------: |
+| 10000 | 网络请求出错 |
+| 10001 | 系统错误 |
+| 10002 | 参数错误(server) |
+| 10005 | 未知错误 |
+| 10006 | 签名错误 |
+| 10007 | 数据库错误 |
+| 10008 | Token过期 |
+| 10009 | 游戏不存在 |
+| 10010 | 用户不存在 |
+| 10011 | 渠道不存在 |
+| 10012 | 授权过期 |
+| 50000 | 未初始化SDK |
+| 50001 | Unity Editor不支持（未使用） |
+| 50002 | sdk, 国内通行证和渠道（未使用） |
+| 50003 | sdk, 国内通行证和渠道 |
+| 50004 | SDK未登录 |
+| 50005 | 参数错误 |
+| 50006 | 服务器响应数据错误 |
+| 50007 | 不支持引导模式 |
+| 50008 | 加载配置文件失败 |
+| 50009 | SDK重复初始化 |
+
+
+> Note: EPSDK使用cocoapods方式接入，在unity2019之后的版本，unity统一导出UnityFramework.framework,SDK需要接入到framework中，需要在Podfile中修改SDK的target的依赖。
 
 ```ruby
 post_install do |installer|
