@@ -68,3 +68,13 @@ e.g.
 
 ```
 
+示例
+```objc
+    NSDictionary *params = @{
+        @"entranceId":@"E001",
+        @"welcomeMessage":@"hello 你好"
+    };
+[[EPSDK sharedSDK] showCustomServicePageWithParams:params];
+```
+
+

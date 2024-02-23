@@ -22,7 +22,7 @@ source 'https://cdn.cocoapods.org'
 platform :ios, '10.0'
 
 target 'UnityFramework' do
-  pod 'EPSDK’
+  pod 'EPSDK'
 end
 ```
 Then, run the following command:

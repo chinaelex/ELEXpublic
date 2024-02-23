@@ -27,7 +27,7 @@ source 'https://cdn.cocoapods.org'
 platform :ios, '10.0'
 
 target 'UnityFramework' do
-  pod 'EPPay’
+  pod 'EPPay'
 end
 ```
 Then, run the following command:
