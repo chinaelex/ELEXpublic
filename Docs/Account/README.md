@@ -37,7 +37,7 @@ $ pod install
 # 接入
 导入头文件
 ```objc
-#import <EPSDK/EPSDK+Account.h>
+#import <EPSDK_Account/EPSDK+Account.h>
 ```
 ## 登录
 接口：

@@ -24,6 +24,7 @@
 |   跳转   |
 |   推送   |
 |   客服   |
+| 设备权限  |
 
 ### Account
 |     登录方式    |  支持地区  | 最低iOS版本 |
@@ -250,6 +251,9 @@ warning:此接口必须调用，若不调用支付功能无法正常使用
 
 ## 客服
 [客服](./Docs/CustomService/README.md)
+
+## 设备权限
+[设备权限](./Docs/Device/README.md)
 
 ---
 
