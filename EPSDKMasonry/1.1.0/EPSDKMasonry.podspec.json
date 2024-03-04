@@ -12,7 +12,7 @@
   },
   "social_media_url": "http://twitter.com/cloudkite",
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDKMasonry/1.1.0/EPSDKMasonry_1.1.0_a560.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDKMasonry/1.1.0/EPSDKMasonry_xcframework_1.1.0_9838.zip",
     "type": "zip"
   },
   "description": "Masonry is a light-weight layout framework which wraps AutoLayout with a nicer syntax.\nMasonry has its own layout DSL which provides a chainable way of describing your\nNSLayoutConstraints which results in layout code which is more concise and readable.\n    Masonry supports iOS and Mac OSX.",
@@ -22,21 +22,13 @@
       "UIKit"
     ]
   },
-  "tvos": {
-    "frameworks": [
-      "Foundation",
-      "UIKit"
-    ]
-  },
-  "osx": {
-    "frameworks": [
-      "Foundation",
-      "AppKit"
-    ]
-  },
   "platforms": {
-    "ios": "6.0"
+    "ios": "10.0"
   },
   "requires_arc": true,
-  "vendored_frameworks": "EPSDKMasonry.framework"
+  "ios": {
+    "vendored_frameworks": [
+      "EPSDKMasonry/EPSDKMasonry.xcframework"
+    ]
+  }
 }

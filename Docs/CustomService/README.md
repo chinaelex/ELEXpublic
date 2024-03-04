@@ -70,24 +70,11 @@ e.g.
 
 示例
 ```objc
-NSDictionary *params = @{
-	@"entranceId":@"E001",
-	@"welcomeMessage":@"hello 你好"
-};
+    NSDictionary *params = @{
+        @"entranceId":@"E001",
+        @"welcomeMessage":@"hello 你好"
+    };
 [[EPSDK sharedSDK] showCustomServicePageWithParams:params];
 ```
 
-### 设置未读消息数回调
-```objc
 
-/// 设置客服模块未读消息数量回调
-/// @param callback 未读消息数量回调
-- (void)setCustomServiceUnReadMessageCountCallback:(void(^)(NSInteger unreadCount))callback;
-```
-示例
-```objc
-[[EPSDK sharedSDK] setCustomServiceUnReadMessageCountCallback:^(NSInteger unreadCount) {
-	//处理未读消息数量unreadCount        
-}];
-
-```
