@@ -12,12 +12,13 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_AntiAddict/0.1.8/EPSDK_AntiAddict_xcframework_0.1.8_3bd8.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_AntiAddict/0.1.8/EPSDK_AntiAddict_xcframework_0.1.8_8e92.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "10.0"
   },
+  "private_header_files": "EPSDK/AntiAddict/Classes/**/*.h",
   "dependencies": {
     "EPSDKBase": [
       "0.1.8"
