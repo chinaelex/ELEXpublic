@@ -1,0 +1,34 @@
+{
+  "name": "ZMXTNetWork",
+  "version": "0.1.4",
+  "summary": "A short description of ZMXTNetWork.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kunpengapple@163.com/ZMXTNetWork",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kunpengapple@163.com": "songkunpeng@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/ZMXTNetWork/0.1.4/ZMXTNetWork.framework.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "libraries": "stdc++",
+  "dependencies": {
+    "SocketRocket": [
+      "0.7.0"
+    ],
+    "ZMXTCommon": [
+      "0.1.4"
+    ],
+    "Protobuf": [
+      "3.25.0"
+    ]
+  },
+  "vendored_frameworks": "ZMXTNetWork.framework"
+}
