@@ -12,12 +12,13 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPOpenPlatform_Google/0.1.8/EPOpenPlatform_Google_xcframework_0.1.8_d80c.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPOpenPlatform_Google/0.1.8/EPOpenPlatform_Google_xcframework_0.1.8_20a4.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "10.0"
   },
+  "private_header_files": "EPSDK/OpenPlatform-Google/**/*.h",
   "libraries": [
     "stdc++",
     "z"
