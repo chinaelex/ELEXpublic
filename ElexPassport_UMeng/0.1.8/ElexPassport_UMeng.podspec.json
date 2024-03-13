@@ -12,12 +12,13 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/ElexPassport_UMeng/0.1.8/ElexPassport_UMeng_xcframework_0.1.8_58a4.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/ElexPassport_UMeng/0.1.8/ElexPassport_UMeng_xcframework_0.1.8_2f5d.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "10.0"
   },
+  "private_header_files": "EPSDK/EPAccount-UMeng/Classes/**/*.h",
   "dependencies": {
     "EPSDKBase": [
       "0.1.8"
