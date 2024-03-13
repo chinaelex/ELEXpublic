@@ -1,0 +1,49 @@
+{
+  "name": "ZMXTNativeChatUI",
+  "version": "0.1.4",
+  "summary": "A short description of ZMXTNativeChatUI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kunpengapple@163.com/ZMXTNetWork",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kunpengapple@163.com": "songkunpeng@elex-tech.com"
+  },
+  "source": {
+    "http": "http://cocoapods.elex-tech.com/releases/ZMXTNativeChatUI/0.1.4/ZMXTNativeChatUI.framework.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "ios": {
+    "exclude_files": [
+      "ZMXTChatSDK/ZMXTNativeChatUI/Classes/ThirdPart/YYKit/Base/Foundation/NSObject+YYAddForARC.{h,m}",
+      "ZMXTChatSDK/ZMXTNativeChatUI/Classes/ThirdPart/YYKit/Base/Foundation/NSThread+YYAdd.{h,m}"
+    ]
+  },
+  "dependencies": {
+    "SSZipArchive": [
+      "2.4.3"
+    ],
+    "SDWebImage": [
+      "5.18.3"
+    ],
+    "MJRefresh": [
+      "3.7.6"
+    ],
+    "Masonry": [
+      "1.1.0"
+    ],
+    "ZMXTNativeChat": [
+
+    ]
+  },
+  "vendored_frameworks": "ZMXTNativeChatUI.framework",
+  "resources": [
+    "ZMXTNativeChatUI.framework/Resources/*.bundle",
+    "ZMXTNativeChatUI.framework/Versions/A/Resources/*.bundle"
+  ]
+}
