@@ -12,12 +12,13 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_Facebook/0.1.8/EPTrackSDK_Facebook_xcframework_0.1.8_1292.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_Facebook/0.1.8/EPTrackSDK_Facebook_xcframework_0.1.8_02c7.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "12.0"
   },
+  "private_header_files": "EPSDK/EPTrackSDK-Facebook/**/*.h",
   "dependencies": {
     "EPSDKBase": [
       "0.1.8"

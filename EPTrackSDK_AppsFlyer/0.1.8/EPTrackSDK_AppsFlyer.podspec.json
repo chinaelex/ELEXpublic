@@ -12,12 +12,13 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_AppsFlyer/0.1.8/EPTrackSDK_AppsFlyer_xcframework_0.1.8_c22d.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_AppsFlyer/0.1.8/EPTrackSDK_AppsFlyer_xcframework_0.1.8_53ef.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "10.0"
   },
+  "private_header_files": "EPSDK/EPTrackSDK-AppsFlyer/**/*.h",
   "dependencies": {
     "EPSDKBase": [
       "0.1.8"

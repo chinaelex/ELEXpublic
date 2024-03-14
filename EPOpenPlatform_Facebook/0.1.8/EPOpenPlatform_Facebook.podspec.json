@@ -12,12 +12,13 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPOpenPlatform_Facebook/0.1.8/EPOpenPlatform_Facebook_xcframework_0.1.8_a3f9.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPOpenPlatform_Facebook/0.1.8/EPOpenPlatform_Facebook_xcframework_0.1.8_33ae.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "12.0"
   },
+  "private_header_files": "EPSDK/OpenPlatform-Facebook/**/*.h",
   "libraries": [
     "stdc++",
     "z"

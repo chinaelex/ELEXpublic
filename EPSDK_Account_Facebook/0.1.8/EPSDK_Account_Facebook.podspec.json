@@ -12,12 +12,13 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_Account_Facebook/0.1.8/EPSDK_Account_Facebook_xcframework_0.1.8_af39.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_Account_Facebook/0.1.8/EPSDK_Account_Facebook_xcframework_0.1.8_d148.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "12.0"
   },
+  "private_header_files": "EPSDK/EPAccount-Facebook/**/*.h",
   "dependencies": {
     "EPSDKBase": [
       "0.1.8"

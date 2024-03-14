@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_Push_Firebase/0.1.8/EPSDK_Push_Firebase_xcframework_0.1.8_ad11.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_Push_Firebase/0.1.8/EPSDK_Push_Firebase_xcframework_0.1.8_d019.zip",
     "type": "zip"
   },
   "platforms": {
@@ -22,6 +22,7 @@
     "stdc++",
     "z"
   ],
+  "private_header_files": "EPSDK/Push_Firebase/**/*.h",
   "dependencies": {
     "EPSDKBase": [
       "0.1.8"
