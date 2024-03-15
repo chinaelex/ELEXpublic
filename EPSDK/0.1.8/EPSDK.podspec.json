@@ -12,16 +12,12 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK/0.1.8/EPSDK_xcframework_0.1.8_3c66.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK/0.1.8/EPSDK_xcframework_0.1.8_1d54.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "project_header_files": [
-    "EPSDK/Core/Classes/AppLifecycle/*.h",
-    "EPSDK/Core/Classes/ClientInfo/*.h"
-  ],
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
