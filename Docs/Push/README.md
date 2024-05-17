@@ -50,6 +50,9 @@ $ pod install
 },
 ```
 Unity会自动配置工程，无需再做接入处理；
+
+	至此已可接收远程推送消息；
+
 ## 2.2 多媒体消息通知
 [图片]
 [图片]
@@ -218,6 +221,51 @@ App Group需要在证书中开启并设置group id；
 /// - Parameter completion: 完成回调Block
 - (void)getPendingNotificationWithCompletion:(void(^)(NSArray <EPNotificationContent*>* notificationContents))completion;
 ```
+#### 1.发送时间间隔通知
+```objc
+NSString *identifier;
+NSString *title;
+NSString *subtitle;
+NSString *body;
+NSString *sound;
+NSString *extraData;
+NSNumber *badge;
+NSTimeInterval timeInterval; //延时时间
+BOOL repeats;
+
+EPLocalTimeIntervalNotificationContent *timeIntervalNotificationContent = [[EPLocalTimeIntervalNotificationContent alloc] initWithNotificationID:identifier title:title subtitle:subtitle body:body extraData:extraData sound:sound badge:badge repeats:repeats timeInterval:timeInterval];
+
+[[EPNotificationCenter defaultCenter] addLocalNotificationWithContent:timeIntervalNotificationContent withCompletionHandler:^(NSError * _Nullable error) {
+        
+}];
+```
+
+#### 2.发送基于日期的通知
+```objc
+NSString *identifier;
+NSString *title;
+NSString *subtitle;
+NSString *body;
+NSString *sound;
+NSString *extraData;
+NSNumber *badge;
+BOOL repeats;
+
+EPLocalCalendarNotificationContent *calendarContent = [[EPLocalCalendarNotificationContent alloc] initWithNotificationID:identifier title:title subtitle:subtitle body:body extraData:extraData sound:sound badge:badge repeats:repeats];
+/** 根据具体时间设置
+calendarContent.year = year;
+calendarContent.month = month;
+calendarContent.day = day;
+calendarContent.hour = hour;
+calendarContent.minute = minute;
+calendarContent.second = second;
+calendarContent.weekday = weekday;
+*/
+[[EPNotificationCenter defaultCenter] addLocalNotificationWithContent:calendarContent withCompletionHandler:^(NSError * _Nullable error) {
+        
+}];
+```
+
 ### 3. 通知回调
 #### 1.设置代理
 
