@@ -45,9 +45,8 @@ $ pod install
 "package": {
     "notification": {
         "enable": true
-    },
-    // ...
-},
+    }
+}
 ```
 Unity会自动配置工程，无需再做接入处理；
 
@@ -86,7 +85,6 @@ end
         "enable": true,
         "notificationServiceExtensionEnable": true
     }
-    // ...
 }
 ```
 Unity会自动配置工程，无需再做接入处理；
@@ -105,9 +103,9 @@ Unity会自动配置工程，无需再做接入处理；
 ```json
 "package": {
     "notification": {
-        "enable": true, //推送开关
-        "notificationServiceExtensionEnable": true, //推送Extension开关
-        "communicationNotificationEnable":true // 通讯消息开关
+        "enable": true,
+        "notificationServiceExtensionEnable": true,
+        "communicationNotificationEnable":true
     }
 }
 ```
@@ -122,12 +120,13 @@ Unity会自动配置工程，无需再做接入处理；
 ```json
 "package": {
     "notification": {
-        "enable": true, //推送开关
-        "notificationServiceExtensionEnable": true, //推送Extension开关
+        "enable": true, 
+        "notificationServiceExtensionEnable": true
     }
 }
 
 ```
+
 红点数量:远程推送需要在推送消息中设置badge；
 ## 2.5 App角标自增
 如果需要App的badge角标数量自增，需要添加Notification Service Extensin 和 App Groups；
