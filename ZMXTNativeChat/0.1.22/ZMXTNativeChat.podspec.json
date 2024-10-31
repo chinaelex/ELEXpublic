@@ -27,6 +27,9 @@
     ],
     "ZMXTNetWork": [
       "0.1.22"
+    ],
+    "ZMXTCommonData": [
+      "0.1.22"
     ]
   },
   "vendored_frameworks": "ZMXTNativeChat.framework"
