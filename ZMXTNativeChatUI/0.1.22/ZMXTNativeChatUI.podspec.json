@@ -18,26 +18,14 @@
   "platforms": {
     "ios": "11.0"
   },
-  "ios": {
-    "exclude_files": [
-      "ZMXTChatSDK/ZMXTNativeChatUI/Classes/ThirdPart/YYKit/Base/Foundation/NSObject+YYAddForARC.{h,m}",
-      "ZMXTChatSDK/ZMXTNativeChatUI/Classes/ThirdPart/YYKit/Base/Foundation/NSThread+YYAdd.{h,m}"
-    ]
-  },
   "dependencies": {
     "ZipKit": [
       "1.0.3"
     ],
-    "SDWebImage": [
-      "5.18.3"
-    ],
-    "MJRefresh": [
-      "3.7.6"
-    ],
-    "Masonry": [
-      "1.1.0"
-    ],
     "ZMXTNativeChat": [
+      "0.1.22"
+    ],
+    "ZMXTCommunitySDK": [
       "0.1.22"
     ]
   },
