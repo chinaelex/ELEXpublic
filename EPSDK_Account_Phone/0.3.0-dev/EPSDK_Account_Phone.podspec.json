@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_Account_Phone/0.3.0-dev/EPSDK_Account_Phone_xcframework_0.3.0-dev_2fcf.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_Account_Phone/0.3.0-dev/EPSDK_Account_Phone_xcframework_0.3.0-dev_b096.zip",
     "type": "zip"
   },
   "platforms": {
@@ -28,7 +28,7 @@
     "EPSDK_Account": [
       "0.3.0-dev"
     ],
-    "ElexPassport": [
+    "EPSDK_Account_ElexPassport_Base": [
       "0.3.0-dev"
     ]
   },
