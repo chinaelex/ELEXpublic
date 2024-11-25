@@ -12,7 +12,7 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_PrivacyPolicy_Default/0.3.0-dev/EPSDK_PrivacyPolicy_Default_xcframework_0.3.0-dev_23f6.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDK_PrivacyPolicy_Default/0.3.0-dev/EPSDK_PrivacyPolicy_Default_xcframework_0.3.0-dev_d109.zip",
     "type": "zip"
   },
   "platforms": {
@@ -35,7 +35,7 @@
       "EPSDK_PrivacyPolicy_Default/EPSDK_PrivacyPolicy_Default.xcframework"
     ],
     "resources": [
-      "EPSDK_PrivacyPolicy_Default/Resources/ios/EPPrivacyPolocyAssetsBundle.bundle"
+      "EPSDK_PrivacyPolicy_Default/Resources/ios/EPSDK_PrivacyPolicy_Default.bundle"
     ]
   }
 }
