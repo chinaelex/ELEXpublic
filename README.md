@@ -156,6 +156,12 @@ $ pod install
  */
 - (void)epsdk:(EPSDK *)epsdk didLogoutWithInfo:(nullable NSDictionary *)info;
 
+
+/// SDK切换账号回调
+/// @param epsdk epsdk EPSDK实例
+/// @param account 新账号
+- (void)epsdk:(EPSDK *)epsdk didSwitchAccount:(EPAccount *)account;
+
 /**
  sdk账号退出回调方法
  @param epsdk EPSDK实例

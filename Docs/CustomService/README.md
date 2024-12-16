@@ -64,6 +64,15 @@ e.g.
 */
 - (BOOL)showCustomServicePageWithParams:(nullable NSDictionary *)params;
 
+/// 设置客服模块未读消息数量回调
+/// @param callback 未读消息数量回调
+- (void)setCustomServiceUnReadMessageCountCallback:(void(^)(NSInteger unreadCount))callback;
+
+/// 打开指定 FAQ 页面
+/// @param faqId 页面Id
+/// @param showConversationMoment 显示人工客服入口时机
+- (void)showSingleFAQ:(NSString *)faqId showConversationMoment:(int)showConversationMoment;
+
 @end
 
 ```

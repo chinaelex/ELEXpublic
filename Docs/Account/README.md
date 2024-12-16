@@ -59,6 +59,12 @@ typedef NS_ENUM(NSInteger , EPLoginType) {
     EPLoginTypeGuest = 1,
     /** 渠道登录 **/
     EPLoginTypeChannel = 3,
+    /** Elex登录 **/
+    EPLoginTypeElex = 10,
+    /** 手机号登录 */
+    EPLoginTypePhone = 11,
+    /** 邮箱登录 */
+    EPLoginTypeEmail = 12,
     /** Facebook账号登录 */
     EPLoginTypeFacebook = 20,
     /** Google登录 */
@@ -189,6 +195,46 @@ end
 ![config](./images/account_config_signInWithApple.png)
 ```objc
 [[EPSDK sharedSDK] loginWithType:EPLoginTypeApple complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
+    if(error){
+    //处理失败
+    }else{
+    //处理登录成功
+    }
+ }];
+```
+
+### 手机号登录(v0.3.0)![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat)
+1. 引入插件
+```ruby
+platform :ios, '12.0’
+
+target 'UnityFramework' do
+  pod 'EPSDK_Account_Phone’
+end
+```
+2. 调用接口
+```objc
+[[EPSDK sharedSDK] loginWithType:EPLoginTypePhone complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
+    if(error){
+    //处理失败
+    }else{
+    //处理登录成功
+    }
+ }];
+```
+
+### 邮箱登录(v0.3.0)![CN | Oversea](https://img.shields.io/badge/CN_|_Oversea-green.svg?style=flat)
+1. 引入插件
+```ruby
+platform :ios, '12.0’
+
+target 'UnityFramework' do
+  pod 'EPSDK_Account_Email’
+end
+```
+2. 调用接口
+```objc
+[[EPSDK sharedSDK] loginWithType:EPLoginTypeEmail complition:^(NSError * _Nonnull error, EPAccount * _Nonnull account) {
     if(error){
     //处理失败
     }else{
@@ -332,6 +378,67 @@ EPSocialPlatform socialType;
 }];
 ```
 
+## 账号验证
+```objc
+
+@interface EPSDK (AccountVerify)
+
+/// 验证账号
+/// - Parameters:
+///   - verifyType: 验证类型枚举，手机号/邮箱
+///   - isAllowSwitchVerifyType: 在其他验证方式可用的情况下是否允许切换验证方式；
+///   - completion: 验证完成回调
+- (void)verifyAccountWithVerifyType:(EPAccountVerifyType)verifyType allowSwitchVerifyType:(BOOL)isAllowSwitchVerifyType completion:(void(^)(NSError *_Nullable error))completion;
+
+@end
+```
+
+## 使用SDK内置UI
+1. 导入头文化部
+```objc
+#import <EPSDK_Account/EPSDK+AccountUI.h>
+```
+
+
+```objc
+@interface EPSDK (AccountUI)
+
+
+/// 使用SDK内置UI登录
+/// - Parameter completion: 登录完成回调
+- (void)loginUsingBuiltUIWithCompletion:(void (^)(NSError *_Nullable error,EPAccount *_Nullable account))completion;
+
+
+/// 使用SDK内置UI登录
+/// - Parameters:
+///   - option: 登录方式Options
+///   - completion: 登录完成回调
+- (void)loginUsingBuiltUIWithOptions:(EPLoginTypeOption)option completion:(void (^)(NSError *_Nullable error,EPAccount *_Nullable account))completion;
+
+
+/// 使用SDK内置UI切换
+/// - Parameter completion: 切换完成回调
+- (void)switchAccountUsingBuiltUIWithCompletion:(void (^)(NSError *_Nullable error,EPAccount *_Nullable account))completion;
+
+/// 使用SDK内置UI切换
+/// - Parameters:
+///   - option: 登录方式Options
+///   - completion: 切换完成回调
+- (void)switchAccountUsingBuiltUIWithOptions:(EPLoginTypeOption)option completion:(void (^)(NSError *_Nullable error,EPAccount *_Nullable account))completion;
+
+@end
+```
+
+打开用户中心
+```objc
+@interface EPSDK (UserCenter)
+
+/// 打开用户中心
+- (void)showUserCenter;
+
+@end
+```
+
 # 错误码
 |  错误码  |       说明       |
 | :-----: | :--------------: |
@@ -354,4 +461,13 @@ EPSocialPlatform socialType;
 | 51004 | 无效的Token |
 | 51005 | 操作失败 |
 | 51006 | 分享等社交操作取消 |
+| 51007 | 获取好友失败 |
+| 51008 | 没有指定权限 |
+| 51009 | 未安装APP |
+| 51011 | 没有可用的登录类型 |
+| 13001 | 账号验证发送验证码错误 |
+| 13010 | 账号验证发送验证码频繁 |
+| 51100 | 账号验证方式不可用 |
+| 51101 | 没有可用的验证方式 |
+| 51102 | 用户取消验证 |
 
