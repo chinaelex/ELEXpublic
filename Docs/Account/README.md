@@ -428,6 +428,24 @@ EPSocialPlatform socialType;
 
 @end
 ```
+SDK内置UI登录/切换配置
+```json
+"accountUI": {
+    "handleDeleting":false,
+    "handleSocialIdNotMatch":false,
+    "handleSocialNotBindUser":false,
+    "showGuestAtBound":false,
+    "switchSocialLogin":false,
+    "facebookAccountSwitcherHelpURL":"https://www.facebook.com/help/170585223002660?cms_platform=iphone-app&helpref=platform_switcher"
+  }
+```
+
+- handleDeleting: 自动登录时是否处理账号已删除的错误；默认NO；
+- handleSocialIdNotMatch: 自动登录后是否检查前后账号是否一致；默认NO；
+- handleSocialNotBindUser: 自动登录是否处理社交授权登录没有账号的错误；默认NO；
+- showGuestAtBound: 账号绑定社交信息后是否在登录页面显示游客登录；默认YES；
+- switchSocialLogin: 切换账号时，如若没有账号是否自动生成账号；默认NO；
+- facebookAccountSwitcherHelpURL: FB切换账号指南地址，不配置或配置为nil时不显示指南按钮；
 
 打开用户中心
 ```objc
@@ -438,6 +456,16 @@ EPSocialPlatform socialType;
 
 @end
 ```
+用户中心配置
+```json
+"accountUI": {
+    "showSwitchAccount":true,
+    "showDeleteAccount":true
+  }
+
+```
+- showSwitchAccount: 用户中心页面是否显示切换账号按钮；默认YES；
+- showDeleteAccount: 用户中心页面是否显示账号删除按钮；默认YES；
 
 # 错误码
 |  错误码  |       说明       |
