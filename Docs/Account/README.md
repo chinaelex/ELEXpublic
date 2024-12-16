@@ -209,7 +209,7 @@ end
 platform :ios, '12.0’
 
 target 'UnityFramework' do
-  pod 'EPSDK_Account_Phone’
+  pod 'EPSDK_Account_Phone'
 end
 ```
 2. 调用接口
@@ -229,7 +229,7 @@ end
 platform :ios, '12.0’
 
 target 'UnityFramework' do
-  pod 'EPSDK_Account_Email’
+  pod 'EPSDK_Account_Email'
 end
 ```
 2. 调用接口
