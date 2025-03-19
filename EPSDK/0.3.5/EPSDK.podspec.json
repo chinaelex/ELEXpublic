@@ -43,6 +43,9 @@
     ],
     "ElexFileLogger": [
       "0.3.5"
+    ],
+    "ZipKit": [
+        "1.0.3"
     ]
   },
   "ios": {
