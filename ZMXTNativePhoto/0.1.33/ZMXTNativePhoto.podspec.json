@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "ZMXTCommonData": [
-      ">= 0.1.33"
+      "0.1.33"
     ]
   },
   "vendored_frameworks": "ZMXTNativePhoto.framework",
