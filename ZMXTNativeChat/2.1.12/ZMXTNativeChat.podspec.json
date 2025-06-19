@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "ZMXTCommonData": [
-      "2.1.12"
+      "~> 2.1.10"
     ]
   },
   "vendored_frameworks": "ZMXTNativeChat.framework"
