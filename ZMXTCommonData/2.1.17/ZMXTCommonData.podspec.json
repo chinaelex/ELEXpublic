@@ -46,6 +46,9 @@
     ],
     "Masonry": [
       "1.1.0"
+    ],
+    "SDWebImageWebPCoder": [
+
     ]
   },
   "vendored_frameworks": "ZMXTCommonData.framework",
