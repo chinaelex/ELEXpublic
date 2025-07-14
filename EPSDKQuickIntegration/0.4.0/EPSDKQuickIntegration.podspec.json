@@ -1,8 +1,8 @@
 {
-  "name": "EPOpenPlatform_Facebook",
+  "name": "EPSDKQuickIntegration",
   "version": "0.4.0",
-  "summary": "EPOpenPlatform_Facebook",
-  "description": "EPSDK Facebook 接入模块",
+  "summary": "EPSDK快速接入模块",
+  "description": "'EPSDK快速接入模块'",
   "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
   "license": {
     "type": "MIT",
@@ -12,40 +12,31 @@
     "elex": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPOpenPlatform_Facebook/0.4.0/EPOpenPlatform_Facebook_xcframework_0.4.0_8d44.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPSDKQuickIntegration/0.4.0/EPSDKQuickIntegration_xcframework_0.4.0_e2ed.zip",
     "type": "zip"
   },
   "platforms": {
-    "ios": "12.0"
+    "ios": "10.0"
   },
-  "private_header_files": "EPSDK/OpenPlatform-Facebook/**/*.h",
   "libraries": [
     "stdc++",
     "z"
   ],
   "dependencies": {
-    "EPOpenPlatform": [
-      "0.4.0"
-    ],
     "EPSDKBase": [
       "0.4.0"
     ],
-    "FBSDKCoreKit": [
-      "17.0.0"
-    ],
-    "FBSDKLoginKit": [
-      "17.0.0"
-    ],
-    "FBSDKShareKit": [
-      "17.0.0"
-    ],
-    "FBAEMKit": [
-      "17.0.0"
+    "EPSDK": [
+      "0.4.0"
     ]
   },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "prefix_header_contents": "",
   "ios": {
     "vendored_frameworks": [
-      "EPOpenPlatform_Facebook/EPOpenPlatform_Facebook.xcframework"
+      "EPSDKQuickIntegration/EPSDKQuickIntegration.xcframework"
     ]
   }
 }
