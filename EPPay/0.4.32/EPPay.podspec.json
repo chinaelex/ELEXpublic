@@ -1,8 +1,8 @@
 {
-  "name": "EPTrackSDK_Firebase",
+  "name": "EPPay",
   "version": "0.4.32",
-  "summary": "elex 中台埋点SDK-Firebase",
-  "description": "'elex 中台埋点SDK-Firebase'",
+  "summary": "elex 中台支付SDK",
+  "description": "elex 中台支付SDK，集成iOS IAP支付功能",
   "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
   "license": {
     "type": "MIT",
@@ -12,30 +12,44 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_Firebase/0.4.32/EPTrackSDK_Firebase_xcframework_0.4.32_433d.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPPay/0.4.32/EPPay_xcframework_0.4.32_cf6a.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "private_header_files": "EPSDK/EPTrackSDK-Firebase/**/*.h",
+  "frameworks": [
+    "storekit",
+    "PassKit"
+  ],
   "dependencies": {
     "EPSDKBase": [
       "0.4.32"
     ],
-    "EPTrackSDK": [
+    "EPSDK": [
       "0.4.32"
     ],
-    "Firebase": [
-      "10.24.0"
+    "EPMessageChannel": [
+      "0.4.32"
     ]
   },
+  "swift_versions": "5.5",
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
+  "xcconfig": {
+    "LD_RUNPATH_SEARCH_PATHS": [
+      "$(inherited)",
+      "/usr/lib/swift"
+    ]
+  },
   "ios": {
     "vendored_frameworks": [
-      "EPTrackSDK_Firebase/EPTrackSDK_Firebase.xcframework"
+      "EPPay/EPPay.xcframework"
+    ],
+    "resources": [
+      "EPPay/Resources/ios/EPPay.bundle"
     ]
-  }
+  },
+  "swift_version": "5.5"
 }

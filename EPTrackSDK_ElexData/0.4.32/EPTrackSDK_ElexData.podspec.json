@@ -1,8 +1,8 @@
 {
-  "name": "EPTrackSDK_Firebase",
+  "name": "EPTrackSDK_ElexData",
   "version": "0.4.32",
-  "summary": "elex 中台埋点SDK-Firebase",
-  "description": "'elex 中台埋点SDK-Firebase'",
+  "summary": "elex 中台埋点SDK-ElexData",
+  "description": "'elex 中台埋点SDK-ElexData'",
   "homepage": "https://git.elex-tech.com/opt-connect/elex-sdk.git",
   "license": {
     "type": "MIT",
@@ -12,13 +12,13 @@
     "yanlong": "yanlong@elex-tech.com"
   },
   "source": {
-    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_Firebase/0.4.32/EPTrackSDK_Firebase_xcframework_0.4.32_433d.zip",
+    "http": "http://cocoapods.elex-tech.com/releases/EPTrackSDK_ElexData/0.4.32/EPTrackSDK_ElexData_xcframework_0.4.32_c878.zip",
     "type": "zip"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "private_header_files": "EPSDK/EPTrackSDK-Firebase/**/*.h",
+  "private_header_files": "EPSDK/EPTrackSDK-ElexData/**/*.h",
   "dependencies": {
     "EPSDKBase": [
       "0.4.32"
@@ -26,8 +26,8 @@
     "EPTrackSDK": [
       "0.4.32"
     ],
-    "Firebase": [
-      "10.24.0"
+    "ElexDataSdkIOS": [
+      "1.5.1"
     ]
   },
   "pod_target_xcconfig": {
@@ -35,7 +35,7 @@
   },
   "ios": {
     "vendored_frameworks": [
-      "EPTrackSDK_Firebase/EPTrackSDK_Firebase.xcframework"
+      "EPTrackSDK_ElexData/EPTrackSDK_ElexData.xcframework"
     ]
   }
 }
